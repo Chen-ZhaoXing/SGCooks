@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping(path ="SGCooks")
+@RequestMapping(path ="api/v1/SGCooks")
 public class SGCooksController {
     private final SGCooksService sgCooksService;
 
