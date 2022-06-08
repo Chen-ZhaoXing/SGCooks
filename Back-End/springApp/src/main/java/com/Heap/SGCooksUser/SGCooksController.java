@@ -1,15 +1,17 @@
-package com.Heap.SGCooks;
+package com.Heap.SGCooksUser;
 
 
+import lombok.Getter;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
-@RestController
-@RequestMapping(path ="api/v1/SGCooks")
+@Controller
+@RequestMapping(path ="api/v1/sgcooks")
 public class SGCooksController {
     private final SGCooksService sgCooksService;
 
@@ -18,8 +20,12 @@ public class SGCooksController {
         this.sgCooksService = sgCooksService;
     }
 
+//    @GetMapping
+////    public List<User> getUsers(){
+////        return sgCooksService.getUsers();
+////    }
     @GetMapping
-    public List<User> getUsers(){
-        return sgCooksService.getUsers();
+    public String showWelcomePage() {
+        return "welcome";
     }
 }

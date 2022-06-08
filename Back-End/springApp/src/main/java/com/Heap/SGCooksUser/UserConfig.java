@@ -1,4 +1,4 @@
-package com.Heap.SGCooks;
+package com.Heap.SGCooksUser;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
@@ -13,8 +13,10 @@ public class UserConfig {
         return args -> {
             User novia = new User(
                     "Novia",
+                    "Antony",
                     "novia@gmail.com",
-                    "novia@123"
+                    "novia@123",
+                    UserRole.USER
             );
             repository.saveAll(
                     List.of(novia)
