@@ -1,8 +1,8 @@
 package com.Heap.Registration;
 
 import com.Heap.Registration.token.*;
-import com.Heap.SGCooksUser.SGCooksService;
 import com.Heap.SGCooksUser.User;
+import com.Heap.SGCooksUser.UserService;
 import com.Heap.SGCooksUser.UserRole;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -12,7 +12,7 @@ import java.time.LocalDateTime;
 @Service
 @AllArgsConstructor
 public class RegistrationService {
-    private final SGCooksService sgCooksService;
+    private final UserService userService;
 
     private final ConfirmationTokenService confirmationTokenService;
 
@@ -23,7 +23,7 @@ public class RegistrationService {
         if (!isValid) {
             throw new IllegalStateException("email not found");
         }
-        String token = sgCooksService.signUpUser(
+        String token = userService.signUpUser(
                 new User(
                         request.getFirstName(),
                         request.getLastName(),
@@ -54,7 +54,7 @@ public class RegistrationService {
         }
 
         confirmationTokenService.setConfirmedAt(token);
-        sgCooksService.enableAppUser(
+        userService.enableAppUser(
                 confirmationToken.getUser().getEmail());
         return "confirmed";
     }

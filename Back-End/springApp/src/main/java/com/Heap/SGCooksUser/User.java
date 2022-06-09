@@ -31,7 +31,6 @@ public class User implements UserDetails {
     )
     private Long id;
     private String firstName;
-
     private String lastName;
     private String email;
     private String password;
@@ -41,7 +40,7 @@ public class User implements UserDetails {
 
     private Boolean locked = false;
 
-    private Boolean enabled = false;
+    private Boolean enabled = true; //temporarily set to true
 
     public User() {
     }
