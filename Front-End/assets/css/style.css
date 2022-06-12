@@ -3,16 +3,25 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700;1,800&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+/* google font (darker grotesque) */
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700;1,800&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* google font (poppins) */
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@900&family=Poppins:wght@700;800;900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
 body { 
   font-family: "Roboto Slab";
   color: #777;
   line-height: 1.7;
   margin-bottom: 10000px;
+  margin-top: -20px;
 }
 
 h1,h2,h3,h4,h5,h6 {
   font-weight: 600;
-  color: black
+  color: black;
+  z-index:5;
 }
 
 a {
@@ -30,6 +39,29 @@ img {
   min-width: 100%;
 }
 
+/* general buttons */
+
+.header-button {
+  border-radius: 4px;
+  padding: 14px 38px;
+  color: whitesmoke;
+  background-color: #222;
+  font-weight: 600;
+  font-size: 20px;
+  border: none;
+  transition: background-color, color 0.05s;
+}
+
+.header-button:hover {
+  color: #222 ;
+  background-color: whitesmoke;
+  font-weight: 600;
+  border: none;
+  text-decoration: none;
+}
+
+/* navbar start */
+
 .navbar ul {
   list-style-type: none;
   padding: 0;
@@ -45,9 +77,10 @@ img {
   content: contain;
   justify-content: center;
   margin-left: 10px;
+  cursor: auto;
 }
 
-/* btn start */
+/* navbar btn start */
 
 .btn-round {
   width: 40px;
@@ -70,9 +103,7 @@ img {
   border: none;
 }
 
-/* btn end */
-
-/* navbar start */
+/* navbar btn end */
 
 .navbar a {
   float: left;
@@ -96,8 +127,94 @@ img {
 
 /* navbar end */
 
+/* carousel start */
+
+.carousel-caption {
+  position: absolute;
+  z-index: 1;
+  display:table;
+  width:100%;
+  height:100%;
+}
+
+.absolute-div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.carousel-caption h3 {
+  display:table-cell;
+  vertical-align: middle;
+  text-align:center;
+}
+
+.carousel .item {
+  height: 200px;
+}
+
+.item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 200px;
+}
+
+.item {
+  position:relative;
+}
+
+.slide-1 {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+  url(../img/chicken_soup.jpg);
+}
+
+.slide-2 {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+  url(../img/spagetti.jpg);
+}
+
+.slide-3 {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+  url(../img/produce2.jpg);
+
+}
+
+.bg-cover {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* carousel end */
+
+/* how it works start */
+
+.how_it_works_area {
+  background-color: #F6D7D0;
+  height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
 
 
+}
+
+.how_it_works_img {
+  height:390px;
+  width: 100px;
+    background-color:#FFFFFF;
+    margin-top:10px;
+    overflow: hidden;
+}
+
+.how_it_works_area h1{
+  font-family: "Poppins";
+  text-align: center;
+  margin-top: 50px;
+  font-size: 50px;
+}
 
 
 
