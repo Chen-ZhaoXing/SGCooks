@@ -1,1 +1,0 @@
-# SG Cooks Front End Summary

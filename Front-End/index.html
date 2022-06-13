@@ -19,6 +19,9 @@
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 
+  <!-- for socials icons -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <!-- custom style css -->
   <link href="assets/css/style.css" rel="stylesheet">
 
@@ -111,58 +114,155 @@
   <!-- carousel end -->
 
   <!-- how it works start -->
-  <section id = "how_it_works_module">
-    <div class="container how_it_works_area">
-      <div class = " row how_it_works_title">
-        <h1>How It Works</h1>
-      </div> 
-      <div class="row">
-        <div class="col-xl-8">
-          
+    <div class="container-fluid container1-bg bg-icon my-5 py-6">
+      <div class="container">
+        <div class="section-header text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px; margin-top: -30px; ">
+          <h1 class="display-5 mb-3 section-titles">How It Works</h1>
         </div>
-        <div class="col-xl-8">
-          
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s" style = "position: relative;" >
+            <div class="bg-white text-center h-100 p-4 p-xl-5" style = "position: relative;">
+              <div class = "circle-number">1</div>
+              <img class="img-fluid mb-4 circleimg" src="assets/img/shrimp_veggies-modified.png" alt="">
+              <h2 class="mb-3 circleimg_desc">Choose your favourite meals</h4>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="bg-white text-center h-100 p-4 p-xl-5">
+              <div class = "circle-number">2</div>
+              <img class="img-fluid mb-4 circleimg" src="assets/img/picked_produce-modified.png" alt="">
+              <h2 class="mb-3 circleimg_desc">We deliver fresh Ingredients</h4>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="bg-white text-center h-100 p-4 p-xl-5">
+              <div class = "circle-number">3</div>
+              <img class="img-fluid mb-4 circleimg" src="assets/img/cooking-modified.png" alt="">
+              <h2 class="mb-3 circleimg_desc">Prepare and enjoy!</h4>
+            </div>
+          </div>
+
+          <div class="container h-100 d-flex align-items-center justify-content-center">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <a href="#" class = "btn btn-brand ordernow_btn" style = "font-family: Poppins; font-weight: 700; margin-top: 20px; margin-left: -60px;">Order Now</a>
+              </div>
+            </div>
+          </div>
+
         </div>
-        <div class="col-xl-8">
-          
-        </div>
+      </div>
+      
+    </div>
+  <!-- how it works end -->
+
+  <!-- menu preview start (need js to make it scrollable!) -->
+  <div class="container-fluid container2-bg bg-icon my-5 py-6">
+    <div class="container container2">
+      <div class="section-header text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px; margin-top: 75px; ">
+        <h1 class="display-5 mb-3 section-titles">Our Menu</h1>
       </div>
 
     </div>
+  </div>
+  <!-- menu preview end -->
 
-    
-    
-    
-    <!-- <div class="flex-content-container">
+  <!-- reviews start -->
+  <div class="container-fluid container3-bg bg-icon my-5 py-6"></div>
+    <div class="container container3">
       <div class="row">
-          <img src="assets/img/chicken_rice.png" alt="">
-          <img src="assets/img/chicken_soup.jpg" alt="">
-          <img src="assets/img/porridge.jpg" alt="">
+        <div class="col-md-8 col-center m-auto">
+          <h1 class="display-5 mb-3 section-titles text-center">Customer's Testimonials</h1>
+          <div id="myCarousel" class = "carousel slide " data-ride = "carousell">
+            <div class="carousel-inner">
+              <div class="item carousel-item text-center active">
+                <div class="img-box"><img src="assets/img/avatar3.jpg" alt=""></div>
+                <p class = "testimonial">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias laudantium quam illo amet. Possimus dolor impedit in vel amet laborum.</p>
+                <p class = "overview"><b>Jennifer Smith</b>, Office Worker</p>
+              </div>
+              <div class="item carousel-item text-center">
+                <div class="img-box"><img src="assets/img/avatar2.jpg" alt=""></div>
+                <p class = "testimonial">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias laudantium quam illo amet. Possimus dolor impedit in vel amet laborum.</p>
+                <p class = "overview"><b>Jennifer Smith</b>, Office Worker</p>
+              </div>
+              <div class="item carousel-item text-center">
+                <div class="img-box"><img src="assets/img/avatar1.jpg" alt=""></div>
+                <p class = "testimonial">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias laudantium quam illo amet. Possimus dolor impedit in vel amet laborum.</p>
+                <p class = "overview"><b>Jennifer Smith</b>, Office Worker</p>
+              </div>
+
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+
+            </div>
+
+          </div>
+
+
+        </div>
       </div>
-    </div> -->
-
-  </section>
-
-  <!-- how it works end -->
+    </div>
+  </div>  
+  <!-- reviews end -->
 
 
+  <!-- footer start -->
+  <footer>
+    <div class="mt-5 pt-5 pb-5 footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg5 col-xs-12">
+            <h2>SGCooks</h2>
+            <p class = "pr-5 text-black-50">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat inventore quos voluptatum dolorum reprehenderit explicabo vel quasi recusandae ad itaque!
+            </p>
+            <ul class = "socials">
+              <li><a href="#"><i class = "fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class = "fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class = "fa fa-instagram"></i></a></li>
+              <li><a href="#"><i class = "fa fa-pinterest"></i></a></li>
+            </ul>
+          </div>
+          <div class="col-lg3 col-xs-12 links">
+            <h4 class="mt-lg-0 mt-sm-3">Quick Links</h4>
+            <ul class="m-0 p-0">
+              <li><a href="#">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus, esse?</a></li>
+              <li><a href="#">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus, esse?</a></li>
+              <li><a href="#">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus, esse?</a></li>
+              <li><a href="#">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus, esse?</a></li>
+            </ul>
+            <div class="col-lg-4 col-xs-12 location">
+              <h4 class="mt-lg-0 mt-sm-4">Location</h4>
+              <p><i class = "fa fa-map-marker">Lorem ipsum dolor sit amet.</i></p>
+              <p><i class = "fa fa-phone">(111)-111-111</i></p>
+              <p><i class = "fa fa-envelope-o">sgcooks@gmail.com</i></p>
+            </div>
+            <div class="row mt-5">
+              <div class="col copyright text-center"></div>
+            </div>
+            <p><small class="text-black-50">
+              All Rights Reserved &copy; SGCooks 2022
+            </small></p>
 
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-
-
-
-
-
-
-
-  
-
-
+  <!-- footer end -->
 
   <!-- popper & js -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
 
 </body>
 </html>
