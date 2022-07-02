@@ -2,6 +2,7 @@ package com.Heap.SGCooksUser;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -18,11 +19,11 @@ public class UserController {
         this.userService = userService;
     }
 
-    @GetMapping
-    public List<User> getUsers(){
-        return userService.getUsers();
+    @GetMapping("/users")
+    public ResponseEntity<List<User>> getUsers(){
+        return ResponseEntity.ok().body(userService.getUsers());
     }
-//    @GetMapping
+//    @GetMapping //homepage after logging in
 //    public String showWelcomePage() {
 //        return "welcome";
 //    }
