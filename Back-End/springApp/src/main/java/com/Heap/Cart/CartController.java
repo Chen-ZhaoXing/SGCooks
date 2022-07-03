@@ -8,6 +8,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping(path = "api/v1/sgcooks/cart")
 public class CartController {
@@ -31,12 +33,17 @@ public class CartController {
         return new ResponseEntity<>(new ApiResponse(true, "Added to cart"), HttpStatus.CREATED);
     }
 
-//    // get all cart items for a user
-//    @GetMapping
-//    public ResponseEntity<ApiResponse> getCartItems(@RequestParam("email") String email){
-//
-//        return new ResponseEntity<>(new ApiResponse(true, "Added to cart"), HttpStatus.CREATED);
-//    }
+    // get all cart items for a user
+    @GetMapping
+    public ResponseEntity<List<Cart>> getCartItems(@RequestParam("email") String email){
+        User user = (User) userService.loadUserByUsername(email);
+
+        List<Cart> cart = cartService.getCartItems(user);
+        //create a 2D array and return the 2d array or other methods
+        // or use a composite primary key formed using th euser and cart ID, after they checkout the cart, remove all the cart associated with the user/
+        // thus when adding to cart must add a logic verifying if
+        return new ResponseEntity<>(cart, HttpStatus.OK);
+    }
 //    // delete a cart
 //    @DeleteMapping("/removeItem")
 //    public ResponseEntity<ApiResponse> getCartItems(@RequestParam("email") String email, @RequestBody String productID){
