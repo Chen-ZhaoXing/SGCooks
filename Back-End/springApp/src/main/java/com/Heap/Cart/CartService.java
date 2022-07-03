@@ -5,6 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.Date;
+import java.util.List;
 
 @Service
 public class CartService {
@@ -20,5 +21,9 @@ public class CartService {
         cart.setCreatedDate(new Date());
 
         cartRepository.save(cart);
+    }
+
+    public List<Cart> getCartItems(User user) {
+        return cartRepository.findByUser(user);
     }
 }
