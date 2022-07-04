@@ -44,12 +44,20 @@ public class CartController {
         // thus when adding to cart must add a logic verifying if
         return new ResponseEntity<>(cart, HttpStatus.OK);
     }
-//    // delete a cart
-//    @DeleteMapping("/removeItem")
-//    public ResponseEntity<ApiResponse> getCartItems(@RequestParam("email") String email, @RequestBody String productID){
-//
-//        return new ResponseEntity<>(new ApiResponse(true, "Added to cart"), HttpStatus.CREATED);
-//    }
+    // delete an item
+    @DeleteMapping("/removeItem/{cartItemId}")
+    public ResponseEntity<ApiResponse> removeCartItem(@RequestParam("email") String email, @PathVariable Integer cartItemId){
+        User user = (User) userService.loadUserByUsername(email);
+
+        cartService.removeCartItem(user, cartItemId);
+
+        return new ResponseEntity<>(new ApiResponse(true, "Item removed from cart"), HttpStatus.CREATED);
+    }
 
     //Change product quantity
+    @PutMapping("/changeCartItemQuantity")
+    public ResponseEntity<ApiResponse> changeItemQuantity(@RequestParam("email") String email, @RequestParam String productID, @RequestParam Integer Quantity){
+
+        return new ResponseEntity<>(new ApiResponse(true, "Item quantity changed"), HttpStatus.CREATED);
+    }
 }
