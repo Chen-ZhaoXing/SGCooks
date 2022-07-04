@@ -44,7 +44,7 @@
             <a class="nav-link" aria-current="page" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#menu">Menu</a>
+            <a class="nav-link" href="menu.html">Menu</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="contact.html">Contact</a>
@@ -53,9 +53,9 @@
         </ul>
 
 
-        <button type="button" class="btn btn-brand btn-round"><i class="fa fa-heart"></i></button>
-        <button type="button" class="btn btn-brand btn-round"><i class="fa fa-shopping-cart"></i></button>
-        <button type="button" class="btn btn-brand btn-round"><i class="fa fa-user"></i></button>
+        <button type="button" class="btn btn-brand btn-round" onclick = "location.href = 'favourites.html'"><i class="fa fa-heart"></i></button>
+        <button type="button" class="btn btn-brand btn-round" onclick = "location.href = 'cart.html'"><i class="fa fa-shopping-cart"></i></button>
+        <button type="button" class="btn btn-brand btn-round nav-btn" onclick = "location.href = 'signup.html'"><i class="fa fa-user"></i></button>
 
       </div>
     </div>
@@ -71,7 +71,9 @@
         <div class="col-md-12">
           <div class="form h-100">
             <h1 class="display-5 mb-3 section-titles">Contact Us</h1>
-            <form class="mb-5" method="post" id="contactForm" name="contactForm">
+            <form class="mb-5" id="contactForm" name="contactForm" action="https://formsubmit.co/noviaantony2001@gmail.com" method="POST">
+              <input type="hidden" name="_subject" value="RE: SGCooks Enquiry">
+              <input type="hidden" name="_next" value="thankyou.html">
               <div class="row">
                 <div class="col-md-6 form-group mb-3">
                   <label for="" class="col-form-label">Name *</label>
@@ -79,7 +81,7 @@
                 </div>
                 <div class="col-md-6 form-group mb-3">
                   <label for="" class="col-form-label">Email *</label>
-                  <input type="text" class="form-control" name="email" id="email"  placeholder="Your email">
+                  <input type="email" class="form-control" name="email" id="email"  placeholder="Your email">
                 </div>
               </div>
 
@@ -91,16 +93,15 @@
               </div>
               <div class="row">
                 <div class="col-md-12 form-group">
-                  <a href="#" class = "btn btn-brand sendmsg_btn " style = "font-family: Poppins; font-weight: 700; margin-top: 20px; margin-left: 0px;">Send Message</a>
-                  <span class="submitting"></span>
+                  <button href="#" class = "btn btn-brand sendmsg_btn " type="submit" style = "font-family: Poppins; font-weight: 700; margin-top: 20px; margin-left: 0px;">Send Message</button>
                 </div>
               </div>
             </form>
 
-            <div id="form-message-warning mt-4"></div> 
+            <!-- <div id="form-message-warning mt-4"></div> 
             <div id="form-message-success">
               Your message was sent, thank you!
-            </div>
+            </div> -->
 
           </div>
         </div>

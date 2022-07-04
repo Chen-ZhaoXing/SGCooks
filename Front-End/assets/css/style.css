@@ -697,6 +697,159 @@ SIGNUP.HTML / LOGIN.HTML
   color: #222;
 }
 
+/* 
+-----------------------------------------------------------------------------------------------------------------------
+MENU.HTML
+-----------------------------------------------------------------------------------------------------------------------
+*/
+.searchbar{
+  height: 60px;
+  background-color: #F6D7D0;
+  border-radius: 30px;
+  padding: 10px;
+}
+
+.search_input{
+  color: black;
+  border: 0;
+  outline: 0;
+  background: none;
+  width: 0;
+  caret-color:transparent;
+  line-height: 40px;
+  transition: width 0.4s linear;
+}
+
+.searchbar:hover > .search_input{
+  padding: 0 10px;
+  width: 450px;
+  caret-color:white;
+  transition: width 0.4s linear;
+}
+
+.searchbar:hover > .search_icon{
+  color: black;
+}
+
+.search_icon{
+  height: 40px;
+  width: 40px;
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color:white;
+  text-decoration:none;
+}
+
+
+.menu-header {
+  background: linear-gradient(43deg, #f4b8aa 0%, #f6d7d0 30%, #f4dec8 66%, #f6cba2 100%);
+  padding: 0;
+  margin: 0;
+  height: 400px;
+}
+
+
+.btn-addtocart {
+  border-radius: 4px;
+  padding: 10px 30px;
+  color: whitesmoke;
+  background-color: #222;
+  font-weight: 600;
+  font-size: 15px;
+  border: none;
+  transition: background-color, color 0.15s;
+  width:200px;
+  align-items: center;
+}
+
+.btn-addtocart:hover {
+  background-color: #F4B8AA;
+  color: black;
+}
+
+.btn-viewrecipe {
+  border-radius: 4px;
+  padding: 10px 30px;
+  color: #222;
+  background-color:whitesmoke;
+  font-weight: 600;
+  font-size: 15px;
+  border: none;
+  transition: background-color, color 0.15s;
+  width:200px;
+  align-items: center;
+}
+
+.btn-viewrecipe:hover {
+  background-color: black;
+  color: #F4B8AA;
+}
+
+.filter-btn {
+  color: #F4B8AA;
+  background-color: black;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 8px;
+  transition: background-color 0.15s;
+}
+
+.filter-btn:hover {
+  background-color: #F4B8AA;
+  color: black;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 8px;
+}
+
+/* 
+-----------------------------------------------------------------------------------------------------------------------
+CART.HTML
+-----------------------------------------------------------------------------------------------------------------------
+*/
+
+.cart-header {
+  background: linear-gradient(43deg, #f4b8aa 0%, #f6d7d0 30%, #f4dec8 66%, #f6cba2 100%);
+  padding: 0;
+  margin: 0;
+  height: 300px;
+}
+
+.cart-container {
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 30px;
+}
+.cart-container .cart-body {
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 30px 0 20px;
+  margin: 20px 0 30px;
+}
+
+.btn-checkout{
+  border-radius: 4px;
+  padding: 10px 30px;
+  color: whitesmoke;
+  background-color: #222;
+  font-weight: 600;
+  font-size: 15px;
+  border: none;
+  transition: background-color, color 0.15s;
+  width:200px;
+  align-items: center;
+}
+
+.btn-checkout:hover {
+  background-color: #F4B8AA;
+  color: black;
+}
+
+
+
+
 
 
 
