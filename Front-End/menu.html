@@ -28,6 +28,10 @@
 
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
+  <script async src = "js/menu.js"></script>
+
+  
+
 
 </head>
 <body>
@@ -48,7 +52,7 @@
             <a class="nav-link" aria-current="page" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="menu.html">Menu</a>
+            <a class="nav-link nav-menu-btn" href="menu.html">Menu</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="contact.html">Contact</a>
@@ -121,26 +125,22 @@
    <div class="container-fluid container1-bg bg-icon my-5 py-6"> 
     <div class="container">
       <div class="row g-3 search-result" style = "margin-top: 0; padding-top: 0;">
+        
         <div class = "col-12 col-md-6 col-lg-4">
           <div class="card" style="width: 400px; border-radius: 20px; padding-bottom: 20px;">
             <img class="card-img-top" src="assets/img/menu/pumpkinsoup.jpg" alt="Card image cap" style = "height: 300px; width: 400px; object-fit: cover;">
             <div class="card-body">
               <h5 class="card-title">Creamy Pumpkin Soup</h5>
-              <ul>
-                <li class="card-text">Cooking Time: 30 minutes</li>
-                <li class="card-text">Rating: 98.3%</li>
-                <li class="card-text">Cost Per Serving: <b>$20.00</b></li>
-              </ul>
+              <h9 class="recipe-id" style = "color: white; display: block;">1</h9>
               <a href="#" class="btn-addtocart">Add to Cart</a>
               <button class="btn-viewrecipe" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                 View Recipe
               </button>
               <!-- Modal -->
-              <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" >
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" >
                   <div class="modal-content" id = "modal-content">
                     <div class="modal-header" >
-                      <h5 class="modal-title" id="staticBackdropLabel" style = "text-align: center;">Creamy Pumpkin Soup</h5>
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body" id = "recipe-details"> 
@@ -168,57 +168,11 @@
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div class = "col-12 col-md-6 col-lg-4">
-          <div class="card" style="width: 400px; border-radius: 20px; padding-bottom: 20px;">
-            <img class="card-img-top" src="assets/img/menu/pumpkinsoup.jpg" alt="Card image cap" style = "height: 300px; width: 400px; object-fit: cover;">
-            <div class="card-body">
-              <h5 class="card-title">Creamy Pumpkin Soup</h5>
-              <ul>
-                <li class="card-text">Cooking Time: 30 minutes</li>
-                <li class="card-text">Rating: 98.3%</li>
-                <li class="card-text">Cost Per Serving: <b>$20.00</b></li>
-              </ul>
-              <a href="#" class="btn-addtocart">Add to Cart</a>
-              <button class="btn-viewrecipe" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                View Recipe
-              </button>
-              <!-- Modal -->
-              <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                  <div class="modal-content" id = "modal-content">
-                    <div class="modal-header" >
-                      <h5 class="modal-title" id="staticBackdropLabel" style = "text-align: center;">Creamy Pumpkin Soup</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body" id = "recipe-details"> 
-                      <img src="assets/img/menu/pumpkinsoup.jpg" class="card-img-top" alt="..." style = "height: 300px; width: 400px; object-fit: cover;">
-                      <div class="card-body">
-                        <div class="card-text" >
-                          <h2 class = "recipe-title">Creamy Pumpkin Soup</h2>
-                              <p class = "recipe-category">Vegeterian, Soup, Lunch, Dinner</p>
-                              <div class = "recipe-instruct">
-                                <h3>Instructions:</h3>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo blanditiis quis accusantium natus! Porro, reiciendis maiores molestiae distinctio veniam ratione ex provident ipsa, soluta suscipit quam eos velit autem iste!</p>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet aliquam voluptatibus ad obcaecati magnam, esse numquam nisi ut adipisci in?</p>
-                              </div>
-                              <div class = "recipe-link">
-                                <a href = "https://www.youtube.com/watch?v=GA-fCgJykEw" target = "_blank">Watch Video</a>
-                              </div> 
-                        </div>
-                      </div>
-                    </div>
-                    <div class="modal-footer">
-                      <p>$7.20</p>
-                      <a href="#" class="btn-addtocart">Add to Cart</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+    </div>
+   </div> 
+
+
+        
         
         
         
@@ -240,6 +194,6 @@
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-  <script src = "js/menu.js"></script>
+  
 </body>
 </html>
