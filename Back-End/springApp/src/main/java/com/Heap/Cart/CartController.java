@@ -26,7 +26,6 @@ public class CartController {
     @PostMapping("/addItem")
     public ResponseEntity<ApiResponse> addToCart(@RequestParam("email") String email, @RequestParam String productId, @RequestParam Integer quantity){
 
-        //either capture users here or in cartservice
         User user = (User) userService.loadUserByUsername(email);
 
         cartService.addToCart(user, productId, quantity);
