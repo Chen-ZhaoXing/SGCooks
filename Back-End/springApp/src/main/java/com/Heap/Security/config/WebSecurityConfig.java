@@ -39,7 +39,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         http.authorizeRequests().antMatchers("/api/v1/login/**").permitAll();
 //        http.authorizeRequests().antMatchers("/api/v1/sgcooks/**").hasAnyAuthority("USER");
         http.authorizeRequests().antMatchers("/api/v1/sgcooks/**").permitAll(); //temporarily added this line to allow testing, cause the authorization code doesnt seem to be wokring
-        http.authorizeRequests().anyRequest().authenticated(); //.and()
+        http.authorizeRequests().anyRequest().permitAll(); //authenticated(); //.and()
         http.addFilter(customAuthenticationFilter);
         http.addFilterBefore(new CustomAuthorizationFilter(), UsernamePasswordAuthenticationFilter.class);
     }

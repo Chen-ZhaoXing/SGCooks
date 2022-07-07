@@ -1,7 +1,11 @@
 package com.Heap.Registration;
 
+import com.Heap.SGCooksUser.User;
 import lombok.AllArgsConstructor;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @RequestMapping(path = "api/v1/registration")
@@ -10,8 +14,8 @@ public class RegistrationController {
     private final RegistrationService registrationService;
 
     @PostMapping
-    public String register(@RequestBody RegistrationRequest request) {
-        return registrationService.register(request);
+    public ResponseEntity<String> register(@RequestBody RegistrationRequest request) {
+        return ResponseEntity.ok().body(registrationService.register(request));
     }
 
     @GetMapping(path = "confirm")
