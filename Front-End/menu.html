@@ -30,8 +30,6 @@
 
   <script async src = "js/menu.js"></script>
 
-  
-
 
 </head>
 <body>
@@ -56,14 +54,12 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-          
+          </li>  
         </ul>
 
-
-        <button type="button" class="btn btn-brand btn-round" onclick = "location.href = 'favourites.html'"><i class="fa fa-heart"></i></button>
-        <button type="button" class="btn btn-brand btn-round" onclick = "location.href = 'cart.html'"><i class="fa fa-shopping-cart"></i></button>
-        <button type="button" class="btn btn-brand btn-round nav-btn" onclick = "location.href = 'signup.html'"><i class="fa fa-user"></i></button>
+        <button type="button" class="navbar-right-btn" onclick = "location.href = 'favourites.html'"><i class="fa fa-heart fa-lg" ></i></button>
+        <button type="button" class="btn-brand navbar-right-btn" onclick = "location.href = 'cart.html'"><i class="fa fa-shopping-cart fa-lg"></i></button>
+        <button type="button" class="btn-brand navbar-right-btn" onclick = "location.href = 'signup.html'"><i class="fa fa-user fa-lg"></i></button>
 
       </div>
     </div>
@@ -126,11 +122,11 @@
     <div class="container">
       <div class="row g-3 search-result" style = "margin-top: 0; padding-top: 0;">
         
-        <div class = "col-12 col-md-6 col-lg-4">
+        <!-- <div class = "col-12 col-md-6 col-lg-4">
           <div class="card" style="width: 400px; border-radius: 20px; padding-bottom: 20px;">
-            <img class="card-img-top" src="assets/img/menu/pumpkinsoup.jpg" alt="Card image cap" style = "height: 300px; width: 400px; object-fit: cover;">
+            <img class="card-img-top" src="assets/img/salmon.jpeg" alt="Card image cap" style = "height: 300px; width: 400px; object-fit: cover;">
             <div class="card-body">
-              <h5 class="card-title">Creamy Pumpkin Soup</h5>
+              <h5 class="card-title">Grilled Salmon</h5>
               <h9 class="recipe-id" style = "color: white; display: block;">1</h9>
               <a href="#" class="btn-addtocart">Add to Cart</a>
               <button class="btn-viewrecipe" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
@@ -144,16 +140,56 @@
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body" id = "recipe-details"> 
-                      <img src="assets/img/menu/pumpkinsoup.jpg" class="card-img-top" alt="..." style = "height: 300px; width: 400px; object-fit: cover;">
+                      <img src="assets/img/salmon.jpeg" class="card-img-top" alt="..." style = "height: 300px; width: 400px; object-fit: cover;">
                       <div class="card-body">
                         <div class="card-text" >
-                          <h2 class = "recipe-title">Creamy Pumpkin Soup</h2>
+                          <h2 class = "recipe-title">Grilled Salmon</h2>
                               <p class = "recipe-category">Vegeterian, Soup, Lunch, Dinner</p>
-                              <div class = "recipe-instruct">
+
+
+                              <div class="accordion accordion-flush" id="accordionFlushExample">
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                      Accordion Item #1
+                                    </button>
+                                  </h2>
+                                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header" id="flush-headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                      Accordion Item #2
+                                    </button>
+                                  </h2>
+                                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header" id="flush-headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                      Accordion Item #3
+                                    </button>
+                                  </h2>
+                                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              
+
+                              
+
+                              
+                              <!-- <div class = "recipe-instruct">
                                 <h3>Instructions:</h3>
                                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo blanditiis quis accusantium natus! Porro, reiciendis maiores molestiae distinctio veniam ratione ex provident ipsa, soluta suscipit quam eos velit autem iste!</p>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet aliquam voluptatibus ad obcaecati magnam, esse numquam nisi ut adipisci in?</p>
-                              </div>
+                              </div> -->
                               <div class = "recipe-link">
                                 <a href = "https://www.youtube.com/watch?v=GA-fCgJykEw" target = "_blank">Watch Video</a>
                               </div> 
@@ -168,11 +204,10 @@
                 </div>
               </div>
             </div>
-    </div>
-   </div> 
+          </div>
+        </div>  -->
 
 
-        
         
         
         
