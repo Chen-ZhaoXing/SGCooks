@@ -133,6 +133,18 @@ img {
   color: #F4B8AA;
 }
 
+.navbar-right-btn {
+  color: #f4b8aa;
+  background-color: white;
+  border: none;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.navbar-right-btn:hover {
+  color: black;
+}
+
 /* navbar end */
 
 
@@ -258,7 +270,7 @@ INDEX.HTML
   font-size: 20px;
   border: none;
   transition: background-color, color 0.05s;
-  width:200px;
+  width: 300px;
   align-items: center;
 }
 
@@ -860,7 +872,7 @@ MENU.HTML
 
 .btn-viewrecipe {
   border-radius: 4px;
-  padding: 10px 30px;
+  padding: 7px 0px;
   color: #222;
   background-color:whitesmoke;
   font-weight: 600;

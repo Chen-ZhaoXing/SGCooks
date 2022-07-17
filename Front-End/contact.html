@@ -27,6 +27,7 @@
 
 </head>
 <body>
+  
 
   <!-- navbar start -->
   <nav class="navbar navbar-expand-lg bg-white fixed-top shadow py-0">
@@ -49,28 +50,34 @@
           <li class="nav-item">
             <a class="nav-link" href="contact.html">Contact</a>
           </li>
-          
         </ul>
 
 
-        <button type="button" class="btn btn-brand btn-round" onclick = "location.href = 'favourites.html'"><i class="fa fa-heart"></i></button>
-        <button type="button" class="btn btn-brand btn-round" onclick = "location.href = 'cart.html'"><i class="fa fa-shopping-cart"></i></button>
-        <button type="button" class="btn btn-brand btn-round nav-btn" onclick = "location.href = 'signup.html'"><i class="fa fa-user"></i></button>
+        <button type="button" class="navbar-right-btn" onclick = "location.href = 'favourites.html'"><i class="fa fa-heart fa-lg" ></i></button>
+        <button type="button" class="btn-brand navbar-right-btn" onclick = "location.href = 'cart.html'"><i class="fa fa-shopping-cart fa-lg"></i></button>
+        <button type="button" class="btn-brand navbar-right-btn" onclick = "location.href = 'signup.html'"><i class="fa fa-user fa-lg"></i></button>
 
       </div>
     </div>
   </nav>
   <!-- navbar end -->
 
-  <!-- contact start -->
+  <!-- contact header start -->
+  <div class="container-fluid container1-bg bg-icon my-5 py-6 menu-header">
+    <div class="container text-center ">
+      <h1 class="display-5 mb-3 section-titles" style = "padding-top: 150px; font-size: 80px;">Contact Us</h1>
+      <h5 style = "font-weight: 400;">send us your enquiries and we will get to you in 7 working days</h5>
 
-  <div class="content" style = "margin-top: 80px;">
-    
+    </div>
+  </div> 
+  <!-- contact header end -->
+
+  <!-- contact start -->
+  <div class="content">
     <div class="container">
       <div class="row align-items-stretch no-gutters contact-wrap">
         <div class="col-md-12">
           <div class="form h-100">
-            <h1 class="display-5 mb-3 section-titles">Contact Us</h1>
             <form class="mb-5" id="contactForm" name="contactForm" action="https://formsubmit.co/noviaantony2001@gmail.com" method="POST">
               <input type="hidden" name="_subject" value="RE: SGCooks Enquiry">
               <input type="hidden" name="_next" value="thankyou.html">
@@ -93,7 +100,7 @@
               </div>
               <div class="row">
                 <div class="col-md-12 form-group">
-                  <button href="#" class = "btn btn-brand sendmsg_btn " type="submit" style = "font-family: Poppins; font-weight: 700; margin-top: 20px; margin-left: 0px;">Send Message</button>
+                  <button href="#" class = "btn-brand sendmsg_btn " type="submit" style = "font-family: Poppins; font-weight: 700; margin-top: 20px; margin-left: 0px;">Send Message</button>
                 </div>
               </div>
             </form>

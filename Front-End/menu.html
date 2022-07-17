@@ -13,8 +13,6 @@
   <title>SG Cooks</title>
 
   <!-- bootstrap core css -->
-  <!-- <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/css/all.min.css" rel="stylesheet"> -->
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 
@@ -26,13 +24,22 @@
   <!-- custom style css -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <script async src = "js/menu.js"></script>
+
+  <script src="js/style.js"></script>
 
 
 </head>
 <body>
+<!-- 
+  <div class="text-center loader">
+    <div class="spinner-border" style="width: 8rem; height: 8rem; margin-top: 200px;"  role="status">
+      <span class="sr-only"></span>
+    </div>
+  </div> -->
 
   <!-- navbar start -->
   <nav class="navbar navbar-expand-lg bg-white fixed-top shadow py-0">
@@ -82,15 +89,21 @@
         <input type="text" placeholder="Search for Recipe..." style = "width: 400px;">
         <input type="submit" value = "Search"> 
       </form>
-      <div class = "search_filters"  style = "margin-left: 140px;">
-        <button type="button" class="btn btn-outline-dark filter-btn">Chinese</button>
-        <button type="button" class="btn btn-outline-dark filter-btn">Italian</button>
-        <button type="button" class="btn btn-outline-dark filter-btn">Indian</button>
-        <button type="button" class="btn btn-outline-dark filter-btn">Healthy</button>
-        <button type="button" class="btn btn-outline-dark filter-btn">Easy</button>
-        <button type="button" class="btn btn-outline-dark filter-btn">Popular</button>
-        <button type="button" class="btn btn-outline-dark filter-btn">Breakfast</button>
-        <button type="button" class="btn btn-outline-dark filter-btn">Quick</button>
+      <div class = "search_filters"  style = "margin-left: 250px;">
+        <button type="button" class="btn btn-outline-dark filter-btn chinese" id = "chinese">Chinese</button>
+        <button type="button" class="btn btn-outline-dark filter-btn indian">Indian</button>
+        <button type="button" class="btn btn-outline-dark filter-btn korean">Korean</button>
+        <button type="button" class="btn btn-outline-dark filter-btn thai">Thai</button>
+        <button type="button" class="btn btn-outline-dark filter-btn viet">Vietnamese</button>
+        <button type="button" class="btn btn-outline-dark filter-btn european">European</button>
+      </div>
+      <div class = "search_filters"  style = "margin-left: 250px;">
+        <button type="button" class="btn btn-outline-dark filter-btn chinese" id = "paleo">Paleo</button>
+        <button type="button" class="btn btn-outline-dark filter-btn vegan">Vegan</button>
+        <button type="button" class="btn btn-outline-dark filter-btn veg">Vegetarian</button>
+        <button type="button" class="btn btn-outline-dark filter-btn keto">Keto</button>
+        <button type="button" class="btn btn-outline-dark filter-btn glutenfree">Gluten Free</button>
+        <button type="button" class="btn btn-outline-dark filter-btn whole30">Whole 30</button>
       </div>
       
     </div>
@@ -98,128 +111,18 @@
   <!-- search bar end -->
 
   <!-- search results start -->
-
-  <!-- <section class = "menu-section">
-    <div class="container menu-container">
-      <form class = "menu-form">
-        <input type="text" placeholder="Search for Recipe...">
-        <ion-icon name="search-outline"></ion-icon>
-      </form>
-      <div class="search-result">
-        <div class="item">
-          <img src="" alt="">
-          <div class="flex-container">
-            <h1 class="title">This is a Recipe</h1>
-            <a class= "view-button" href="#">View Recipe</a>
-          </div>
-          <p class="item-data">Calories: 120</p>
-        </div>
-      </div>
-    </div>
-  </section> -->
-
    <div class="container-fluid container1-bg bg-icon my-5 py-6"> 
     <div class="container">
-      <div class="row g-3 search-result" style = "margin-top: 0; padding-top: 0;">
-        
-        <!-- <div class = "col-12 col-md-6 col-lg-4">
-          <div class="card" style="width: 400px; border-radius: 20px; padding-bottom: 20px;">
-            <img class="card-img-top" src="assets/img/salmon.jpeg" alt="Card image cap" style = "height: 300px; width: 400px; object-fit: cover;">
-            <div class="card-body">
-              <h5 class="card-title">Grilled Salmon</h5>
-              <h9 class="recipe-id" style = "color: white; display: block;">1</h9>
-              <a href="#" class="btn-addtocart">Add to Cart</a>
-              <button class="btn-viewrecipe" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                View Recipe
-              </button>
-              <!-- Modal -->
-              <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" >
-                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" >
-                  <div class="modal-content" id = "modal-content">
-                    <div class="modal-header" >
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body" id = "recipe-details"> 
-                      <img src="assets/img/salmon.jpeg" class="card-img-top" alt="..." style = "height: 300px; width: 400px; object-fit: cover;">
-                      <div class="card-body">
-                        <div class="card-text" >
-                          <h2 class = "recipe-title">Grilled Salmon</h2>
-                              <p class = "recipe-category">Vegeterian, Soup, Lunch, Dinner</p>
-
-
-                              <div class="accordion accordion-flush" id="accordionFlushExample">
-                                <div class="accordion-item">
-                                  <h2 class="accordion-header" id="flush-headingOne">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                      Accordion Item #1
-                                    </button>
-                                  </h2>
-                                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
-                                  </div>
-                                </div>
-                                <div class="accordion-item">
-                                  <h2 class="accordion-header" id="flush-headingTwo">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                                      Accordion Item #2
-                                    </button>
-                                  </h2>
-                                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
-                                  </div>
-                                </div>
-                                <div class="accordion-item">
-                                  <h2 class="accordion-header" id="flush-headingThree">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                                      Accordion Item #3
-                                    </button>
-                                  </h2>
-                                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-                                  </div>
-                                </div>
-                              </div>
-
-                              
-
-                              
-
-                              
-                              <!-- <div class = "recipe-instruct">
-                                <h3>Instructions:</h3>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo blanditiis quis accusantium natus! Porro, reiciendis maiores molestiae distinctio veniam ratione ex provident ipsa, soluta suscipit quam eos velit autem iste!</p>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet aliquam voluptatibus ad obcaecati magnam, esse numquam nisi ut adipisci in?</p>
-                              </div> -->
-                              <div class = "recipe-link">
-                                <a href = "https://www.youtube.com/watch?v=GA-fCgJykEw" target = "_blank">Watch Video</a>
-                              </div> 
-                        </div>
-                      </div>
-                    </div>
-                    <div class="modal-footer">
-                      <p>$7.20</p>
-                      <a href="#" class="btn-addtocart">Add to Cart</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>  -->
-
-
-        
-        
-        
-                    
-      </div>
-    </div>
+      <div class="row g-3 search-result" style = "margin-top: 0; padding-top: 0;" id = "search-result">
+      </div> 
   </div> 
-
   <!-- search results end -->
+  
 
 
-  <!-- copyright end-->
+  <!-- footer start -->
+  <!-- footer end -->
+
 
   <!-- popper & js -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
@@ -228,6 +131,7 @@
 
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 
   
 </body>
