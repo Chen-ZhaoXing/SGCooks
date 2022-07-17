@@ -1,24 +1,49 @@
-# SGCooks
+> By 
+> - [Zhao Xing](https://github.com/Newbieshine/)
+> - [Yuan Sheng](https://github.com/ChongYuanSheng/)
+> - [Novia](http://github.com/noviaantony/)
+> - [Ariff](http://github.com//)
 
-| Platform      | Description |
-| ----------- | ----------- |
-| Youtube      | Web-App Demo       |
-| Figma   | Wireframe        |
+| Platform                          | Description                                                                                                                    |
+:---------------------------------- | :--------------------------------------------------------------------------------------------------------------------
+                                                                                   
+| Youtube                           | [App Demo]()      |
+| Figma                             | [Wireframes]()    |
 
-## Description
-SGCooks is a Web Application where users can order recipe-specific ingredient boxes, and have them delivered to their doorsteps!
+
+Code submission for [SMU .Hack HEAP 2022]
 
 ## Core Features
+***a***
+> 
 
+***b***
+> 
+
+***c***
+> 
+
+******
+> 
+
+---
+## **Technology Stack**
+- [HTML]()
+- [Bootstrap ]()
+- [Vanilla JavaScript]()
+- [SpringBoot]()
+- [PosgreSQL]()
 
 ## Local Deployment
+### ?
 
-## Technology Stack
-- Backend : Spring Boot, .. 
-- Frontend: HTML, CSS, Bootstrap, Vanilla JavaScript, JQuery
+```bash
+npm install .. ??
+
+
 
 ## Disclaimer
-We do not own or license any copyrights in the images used in the application.
+- We do not own or license any copyrights in the images used in the application. You may use the Services and the contents contained in the Services soley for your own individual non-commercial and informational purposes only.
 
 
 
