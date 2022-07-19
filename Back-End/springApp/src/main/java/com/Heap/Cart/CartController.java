@@ -55,7 +55,11 @@ public class CartController {
 
     //Change product quantity
     @PutMapping("/changeCartItemQuantity")
-    public ResponseEntity<ApiResponse> changeItemQuantity(@RequestParam("email") String email, @RequestParam String productID, @RequestParam Integer Quantity){
+    public ResponseEntity<ApiResponse> changeItemQuantity(@RequestParam("email") String email, @RequestParam Integer cartItemId, @RequestParam Integer quantity){
+
+        User user = (User) userService.loadUserByUsername(email);
+
+        cartService.changeItemQuantity(user, cartItemId, quantity);
 
         return new ResponseEntity<>(new ApiResponse(true, "Item quantity changed"), HttpStatus.CREATED);
     }

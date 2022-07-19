@@ -48,6 +48,26 @@ public class CartService {
         cartRepository.delete(cart);
     }
 
+    public void changeItemQuantity(User user, Integer cartItemId, Integer quantity) {
+
+        Optional<Cart> optionalCart = cartRepository.findById(cartItemId);
+
+        if (optionalCart.isEmpty()){
+            throw new CustomException("Cart item id is invalid: " + cartItemId);
+        }
+
+        Cart cart = optionalCart.get();
+
+        if (cart.getUser() != user){
+            throw new CustomException("cart item id does not belong to user: " + cartItemId);
+        }
+
+        cart.setQuantity(quantity);
+
+        cartRepository.save(cart);
+    }
+
+
     public void deleteCartItems (User user){
         cartRepository.deleteByUser(user);
     }

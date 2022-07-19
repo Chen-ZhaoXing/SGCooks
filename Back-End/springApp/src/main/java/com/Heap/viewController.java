@@ -20,4 +20,34 @@ public class viewController {
         return "login";
     }
 
+    @GetMapping("/cart")
+    public String cart(){
+        return "cart";
+    }
+
+    @GetMapping("/contact")
+    public String contact(){
+        return "contact";
+    }
+
+    @GetMapping("/page_checkout")
+    public String pagecheckout(){
+        return "page-checkout";
+    }
+
+    @GetMapping("/signup")
+    public String signup(){
+        return "signup";
+    }
+
+    @GetMapping("/thankyou")
+    public String thankyou(){
+        return "thankyou";
+    }
+
+    @GetMapping("/favourites")
+    public String favourites(){
+        return "favourites";
+    }
+
 }
