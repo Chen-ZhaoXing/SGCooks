@@ -23,8 +23,9 @@ public class UserController {
     public ResponseEntity<List<User>> getUsers(){
         return ResponseEntity.ok().body(userService.getUsers());
     }
-//    @GetMapping //homepage after logging in
-//    public String showWelcomePage() {
-//        return "welcome";
-//    }
+
+    @GetMapping //homepage after logging in
+    public String showWelcomePage() {
+        return "index";
+    }
 }

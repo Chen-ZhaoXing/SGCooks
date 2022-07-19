@@ -33,13 +33,15 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         CustomAuthenticationFilter customAuthenticationFilter = new CustomAuthenticationFilter(authenticationManagerBean());
         customAuthenticationFilter.setFilterProcessesUrl("/api/v1/login");
-//        http.csrf().disable();
-        http.cors().and().csrf().disable();
+        http.csrf().disable();
+//        http.cors().and().csrf().disable();
         http.sessionManagement().sessionCreationPolicy(STATELESS);
         http.authorizeRequests().antMatchers("/api/v1/registration/**").permitAll();//to allow user to access certain areas
         http.authorizeRequests().antMatchers("/api/v1/login/**").permitAll();
 //        http.authorizeRequests().antMatchers("/api/v1/sgcooks/**").hasAnyAuthority("USER");
         http.authorizeRequests().antMatchers("/api/v1/sgcooks/**").permitAll(); //temporarily added this line to allow testing, cause the authorization code doesnt seem to be wokring
+        http.authorizeRequests()
+                .antMatchers("/js/", "/css/").permitAll();
         http.authorizeRequests().anyRequest().permitAll(); //authenticated(); //.and()
         http.addFilter(customAuthenticationFilter);
         http.addFilterBefore(new CustomAuthorizationFilter(), UsernamePasswordAuthenticationFilter.class);

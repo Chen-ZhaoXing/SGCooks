@@ -37,7 +37,9 @@ async function allRecipes() {
         <h5 class="card-title">${data.recipes[i].title}</h5>
         <h9 class="recipe-id" style = "color: white;">${data.recipes[i].id}</h9>
         <p class="card-text"></p>
-        <a href="#" class="btn-addtocart">Add to Cart</a>
+<!--        <a href="#" class="btn-addtocart">Add to Cart</a>-->
+        <button id="addToCart" type="button" class="btn-addtocart">
+            Add to Cart</button>
         <button class="btn-viewrecipe" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
           View Recipe
         </button>
@@ -759,6 +761,9 @@ document.addEventListener("click", function(e){
   if (e.target && e.target.classList.contains('btn-viewrecipe')){
     e.preventDefault();
     getMealRecipe(e);
+  } else if(e.target && e.target.classList.contains('btn-addtocart')) {
+      e.preventDefault();
+      addToCart(e);
   }
 })
 
@@ -772,6 +777,37 @@ const blobToBase64 = blob => new Promise((resolve, reject) => {
 
 const convertBlobToBase64 = async (blob) => {
   return await blobToBase64(blob);
+}
+
+async function addToCart(e){
+  let recipeId = e.target.parentElement.parentElement.querySelector('.recipe-id').innerText; // !!! retrieves the value from the search bar
+  console.log(recipeId);
+
+  let email = "novia@gmail.com";
+
+  $.ajax({
+    type : "POST",
+    contentType : "application/json",
+    url : "api/v1/sgcooks/cart/addItem?email=" + email + "productId=" + recipeId + "quantity=1",
+    //data : JSON.stringify(formData),
+    dataType : 'json',
+    success : function(result) {
+      // if (result.status == "success") {
+      //     $("#postResultDiv").html(
+      //         "" + result.data.bookName
+      //         + "Post Successfully! <br>"
+      //         + "---> Congrats !!" + "</p>");
+      // } else {
+      //     $("#postResultDiv").html("<strong>Error</strong>");
+      // }
+
+      console.log(result);
+    },
+    error : function(e) {
+      alert("Error!")
+      console.log("ERROR: ", e);
+    }
+  });
 }
 
 async function getMealRecipe(e){
