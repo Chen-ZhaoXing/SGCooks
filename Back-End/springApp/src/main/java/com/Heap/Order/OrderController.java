@@ -27,15 +27,15 @@ public class OrderController {
 
         User user = (User) userService.loadUserByUsername(email);
         orderService.placeOrder(user);
-        return new ResponseEntity<ApiResponse>(new ApiResponse(true, "Order has been placed"), HttpStatus.CREATED);
+        return new ResponseEntity<>(new ApiResponse(true, "Order has been placed"), HttpStatus.CREATED);
     }
-    @GetMapping("/")
+    @GetMapping
     public ResponseEntity<List<Order>> getAllOrders(@RequestParam("email") String email)  {
 
         User user = (User) userService.loadUserByUsername(email);
-        List<Order> orderDtoList = orderService.listOrders(user);
+        List<Order> orderList = orderService.listOrders(user);
 
-        return new ResponseEntity<>(orderDtoList,HttpStatus.OK);
+        return new ResponseEntity<>(orderList,HttpStatus.OK);
     }
 
 }
