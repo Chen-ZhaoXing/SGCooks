@@ -6,7 +6,7 @@ const chineseFilter = document.querySelector('.chinese');
 
 const container = document.querySelector('.container');
 let searchQuery = '';
-const apiKey = "693d8ac79dcc44fbb0536b51643ee240";
+const apiKey = "f4a4c702a03b4236807d9a23325cf6f5";
 
 
 /* 
@@ -37,9 +37,7 @@ async function allRecipes() {
         <h5 class="card-title">${data.recipes[i].title}</h5>
         <h9 class="recipe-id" style = "color: white;">${data.recipes[i].id}</h9>
         <p class="card-text"></p>
-<!--        <a href="#" class="btn-addtocart">Add to Cart</a>-->
-        <button id="addToCart" type="button" class="btn-addtocart">
-            Add to Cart</button>
+        <a href="#" class="btn-addtocart">Add to Cart</a>
         <button class="btn-viewrecipe" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
           View Recipe
         </button>
@@ -52,7 +50,7 @@ async function allRecipes() {
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body" id="recipe-details"> 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Loading...
               </div>
             </div>
           </div>
@@ -111,7 +109,7 @@ async function searchRecipes() {
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body" id="recipe-details"> 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Loading...
               </div>
             </div>
           </div>
@@ -192,7 +190,7 @@ async function searchChineseRecipes(e){
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body" id="recipe-details"> 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Loading...
               </div>
             </div>
           </div>
@@ -239,7 +237,7 @@ async function searchIndianRecipes(e){
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body" id="recipe-details"> 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Loading...
               </div>
             </div>
           </div>
@@ -286,7 +284,7 @@ async function searchThaiRecipes(e){
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body" id="recipe-details"> 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Loading...
               </div>
             </div>
           </div>
@@ -333,7 +331,7 @@ async function searchVietRecipes(e){
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body" id="recipe-details"> 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Loading...
               </div>
             </div>
           </div>
@@ -761,9 +759,6 @@ document.addEventListener("click", function(e){
   if (e.target && e.target.classList.contains('btn-viewrecipe')){
     e.preventDefault();
     getMealRecipe(e);
-  } else if(e.target && e.target.classList.contains('btn-addtocart')) {
-      e.preventDefault();
-      addToCart(e);
   }
 })
 
@@ -777,37 +772,6 @@ const blobToBase64 = blob => new Promise((resolve, reject) => {
 
 const convertBlobToBase64 = async (blob) => {
   return await blobToBase64(blob);
-}
-
-async function addToCart(e){
-  let recipeId = e.target.parentElement.parentElement.querySelector('.recipe-id').innerText; // !!! retrieves the value from the search bar
-  console.log(recipeId);
-
-  let email = "novia@gmail.com";
-
-  $.ajax({
-    type : "POST",
-    contentType : "application/json",
-    url : "api/v1/sgcooks/cart/addItem?email=" + email + "productId=" + recipeId + "quantity=1",
-    //data : JSON.stringify(formData),
-    dataType : 'json',
-    success : function(result) {
-      // if (result.status == "success") {
-      //     $("#postResultDiv").html(
-      //         "" + result.data.bookName
-      //         + "Post Successfully! <br>"
-      //         + "---> Congrats !!" + "</p>");
-      // } else {
-      //     $("#postResultDiv").html("<strong>Error</strong>");
-      // }
-
-      console.log(result);
-    },
-    error : function(e) {
-      alert("Error!")
-      console.log("ERROR: ", e);
-    }
-  });
 }
 
 async function getMealRecipe(e){
@@ -917,6 +881,9 @@ async function getMealRecipe(e){
                           <div class = "recipe-link">
                             <a href = "https://www.youtube.com/watch?v=GA-fCgJykEw" target = "_blank">Watch Video</a>
                           </div> 
+                          <iframe width="420" height="315"
+                            src="https://www.youtube.com/watch?v=GA-fCgJykEw">
+                          </iframe>
                     </div>
       `
     

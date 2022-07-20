@@ -60,6 +60,16 @@ img {
   text-decoration: none;
 }
 
+.btn-start {
+  background-color: black;
+  color: #f4b8aa;
+}
+
+.btn-start:hover {
+  color: black;
+  background-color: #f4b8aa;
+}
+
 /* navbar start */
 
 .navbar ul {
@@ -74,7 +84,7 @@ img {
 .brand_logo {
   width: 80%;
   height: 80%;
-  content: contain;
+  
   justify-content: center;
   margin-left: 10px;
   cursor: auto;
@@ -639,7 +649,7 @@ a {
   color: #000;
   font-size: 13px; }
 
-.btn, .form-control, .custom-select {
+.form-control, .custom-select {
   height: 45px;
   border-radius: 0; }
 
@@ -655,25 +665,6 @@ a {
     box-shadow: none;
     border-color: #000; }
 
-.btn {
-  border: none;
-  border-radius: 0;
-  font-size: 11px;
-  letter-spacing: .2rem;
-  text-transform: uppercase;
-  border-radius: 30px !important; }
-  .btn.btn-primary {
-    border-radius: 30px;
-    background: #ef4339;
-    color: #fff;
-    -webkit-box-shadow: 0 15px 30px 0 rgba(239, 67, 57, 0.2);
-    box-shadow: 0 15px 30px 0 rgba(239, 67, 57, 0.2); }
-  .btn:hover {
-    color: #fff; }
-  .btn:active, .btn:focus {
-    outline: none;
-    -webkit-box-shadow: none;
-    box-shadow: none; }
 
 .contact-wrap {
   -webkit-box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.05);
@@ -918,34 +909,71 @@ CART.HTML
   height: 300px;
 }
 
-.cart-container {
-  border: 1px solid rgba(0, 0, 0, 0.05);
-  padding: 30px;
-}
-.cart-container .cart-body {
-  border-top: 1px solid rgba(0, 0, 0, 0.05);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-  padding: 30px 0 20px;
-  margin: 20px 0 30px;
+
+.size span {
+  font-size: 11px;
 }
 
-.btn-checkout{
-  border-radius: 4px;
-  padding: 10px 30px;
-  color: whitesmoke;
-  background-color: #222;
-  font-weight: 600;
-  font-size: 15px;
+.color span {
+  font-size: 11px;
+}
+
+.product-deta {
+  margin-right: 70px;
+}
+
+
+.text-grey {
+  color: #a39f9f;
+}
+
+.qty i {
+  font-size: 11px;
+}
+.pay-button {
+  color: #f4b8aa;
+  background-color: black;
+  font-family: "Roboto Slab";
   border: none;
-  transition: background-color, color 0.15s;
-  width:200px;
-  align-items: center;
 }
 
-.btn-checkout:hover {
-  background-color: #F4B8AA;
+.pay-button:hover {
+  background-color: #f4b8aa;
   color: black;
+  font-family: "Roboto Slab";
+  border: none;
 }
+
+.pay-button:focus,
+.pay-button:active {
+  background-color: #f4b8aa;
+  color: black;
+  font-family: "Roboto Slab";
+  border: black;
+}
+
+.backtoshopping-button {
+  background-color: #f4b8aa;
+  color: black;
+  font-family: "Roboto Slab";
+  border: none;
+}
+
+.backtoshopping-button:hover {
+  color: #f4b8aa;
+  background-color: black;
+  font-family: "Roboto Slab";
+  border: none;
+}
+
+.backtoshopping-button :focus,
+.backtoshopping-button :active {
+  color: #f4b8aa;
+  background-color: black;
+  font-family: "Roboto Slab";
+  border: none;
+}
+
 
 
 

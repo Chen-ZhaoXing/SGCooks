@@ -24,6 +24,12 @@
   <!-- custom style css -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+  <!-- sweet alert links -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.all.min.js"></script>
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.min.css'>
+
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
 
 </head>
 <body>
@@ -50,12 +56,13 @@
           <li class="nav-item">
             <a class="nav-link" href="contact.html">Contact</a>
           </li>
+          
         </ul>
 
 
-        <button type="button" class="navbar-right-btn" onclick = "location.href = 'favourites.html'"><i class="fa fa-heart fa-lg" ></i></button>
-        <button type="button" class="btn-brand navbar-right-btn" onclick = "location.href = 'cart.html'"><i class="fa fa-shopping-cart fa-lg"></i></button>
-        <button type="button" class="btn-brand navbar-right-btn" onclick = "location.href = 'signup.html'"><i class="fa fa-user fa-lg"></i></button>
+        <button type="button" class="btn-brand navbar-right-btn" onclick = "location.href = 'orders.html'"><i class="fa fa-list-ul"></i></button>
+        <button type="button" class="btn-brand navbar-right-btn" onclick = "location.href = 'cart.html'" style = "margin-right: 30px;"><i class="fa fa-shopping-cart fa-lg"></i></button>  
+        <button type="button" class="btn btn-light btn-start" style="background-color: black; color: #F6D7D0;" onclick = "location.href = 'signup.html'">Get Started</button>
 
       </div>
     </div>
@@ -100,15 +107,12 @@
               </div>
               <div class="row">
                 <div class="col-md-12 form-group">
-                  <button href="#" class = "btn-brand sendmsg_btn " type="submit" style = "font-family: Poppins; font-weight: 700; margin-top: 20px; margin-left: 0px;">Send Message</button>
+                  <button href="#" class = "btn-brand sendmsg_btn " type="submit" style = "font-family: Poppins; font-weight: 700; margin-top: 20px; margin-left: 0px;" onclick="clickMe()">Send Message</button>
                 </div>
               </div>
             </form>
 
-            <!-- <div id="form-message-warning mt-4"></div> 
-            <div id="form-message-success">
-              Your message was sent, thank you!
-            </div> -->
+            
 
           </div>
         </div>
@@ -116,6 +120,30 @@
     </div>
 
   </div>
+
+  <script>
+
+    function clickMe() {
+      Swal.fire({
+        title: 'Are You Sure?',
+        text: "You won't be able to revert this enquiry",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Confirm Enquiry'
+      }).then((result) => {
+        if (result.isConfirmed) {
+          Swal.fire(
+            'Enquiry Sent Successfully',
+            'our team will email you in 7 working days',
+            'success'
+          )
+        }
+      })
+    }
+
+  </script>
 
   
   

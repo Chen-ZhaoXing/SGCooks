@@ -50,17 +50,13 @@
           <li class="nav-item">
             <a class="nav-link" href="contact.html">Contact</a>
           </li>
+          
         </ul>
 
-        <button type="button" class="navbar-right-btn" onclick = "location.href = 'favourites.html'"><i class="fa fa-heart fa-lg" ></i></button>
-        <button type="button" class="btn-brand navbar-right-btn" onclick = "location.href = 'cart.html'"><i class="fa fa-shopping-cart fa-lg"></i></button>
-        <button type="button" class="btn-brand navbar-right-btn" onclick = "location.href = 'signup.html'"><i class="fa fa-user fa-lg"></i></button>
 
-
-        
-
-
-
+        <button type="button" class="btn-brand navbar-right-btn" onclick = "location.href = 'orders.html'"><i class="fa fa-list-ul"></i></button>
+        <button type="button" class="btn-brand navbar-right-btn" onclick = "location.href = 'cart.html'" style = "margin-right: 30px;"><i class="fa fa-shopping-cart fa-lg"></i></button>  
+        <button type="button" class="btn btn-danger" onclick = "location.href = 'index.html'">Log Out</button>
 
       </div>
     </div>
@@ -76,122 +72,41 @@
   <!-- cart header end -->
 
   <!-- cart start -->
-  <section class="pt-5 pb-5">
-    <div class="container">
-      <div class="row w-100">
-          <div class="col-lg-12 col-md-12 col-12">
-              <p class="mb-5 text-center">
-              <table id="shoppingCart" class="table table-condensed table-responsive">
-                  <thead>
-                      <tr>
-                          <th style="width:60%">Product</th>
-                          <th style="width:12%">Price</th>
-                          <th style="width:10%">Quantity</th>
-                          <th style="width:16%"></th>
-                      </tr>
-                  </thead>
-                  <tbody>
-                      <tr>
-                          <td data-th="Product">
-                              <div class="row">
-                                  <div class="col-md-3 text-left">
-                                      <img src="https://via.placeholder.com/250x250/5fa9f8/ffffff" alt="" class="img-fluid d-none d-md-block rounded mb-2 shadow ">
-                                  </div>
-                                  <div class="col-md-9 text-left mt-sm-2">
-                                      <h4>Product Name</h4>
-                                      <p class="font-weight-light">Brand &amp; Name</p>
-                                  </div>
-                              </div>
-                          </td>
-                          <td data-th="Price">$49.00</td>
-                          <td data-th="Quantity">
-                              <input type="number" class="form-control form-control-lg text-center" value="1">
-                          </td>
-                          <td class="actions" data-th="">
-                              <div class="text-right">
-                                  <button class="btn btn-white border-secondary bg-white btn-md mb-2">
-                                      <i class="fas fa-sync"></i>
-                                  </button>
-                                  <button class="btn btn-white border-secondary bg-white btn-md mb-2">
-                                      <i class="fas fa-trash"></i>
-                                  </button>
-                              </div>
-                          </td>
-                      </tr>
-                      <tr>
-                          <td data-th="Product">
-                              <div class="row">
-                                  <div class="col-md-3 text-left">
-                                      <img src="https://via.placeholder.com/250x250/5fa9f8/ffffff" alt="" class="img-fluid d-none d-md-block rounded mb-2 shadow ">
-                                  </div>
-                                  <div class="col-md-9 text-left mt-sm-2">
-                                      <h4>Product Name</h4>
-                                      <p class="font-weight-light">Brand &amp; Name</p>
-                                  </div>
-                              </div>
-                          </td>
-                          <td data-th="Price">$49.00</td>
-                          <td data-th="Quantity">
-                              <input type="number" class="form-control form-control-lg text-center" value="1">
-                          </td>
-                          <td class="actions" data-th="">
-                              <div class="text-right">
-                                  <button class="btn btn-white border-secondary bg-white btn-md mb-2">
-                                      <i class="fas fa-sync"></i>
-                                  </button>
-                                  <button class="btn btn-white border-secondary bg-white btn-md mb-2">
-                                      <i class="fas fa-trash"></i>
-                                  </button>
-                              </div>
-                          </td>
-                      </tr>
-                      <tr>
-                          <td data-th="Product">
-                              <div class="row">
-                                  <div class="col-md-3 text-left">
-                                      <img src="https://via.placeholder.com/250x250/5fa9f8/ffffff" alt="" class="img-fluid d-none d-md-block rounded mb-2 shadow ">
-                                  </div>
-                                  <div class="col-md-9 text-left mt-sm-2">
-                                      <h4>Product Name</h4>
-                                      <p class="font-weight-light">Brand &amp; Name</p>
-                                  </div>
-                              </div>
-                          </td>
-                          <td data-th="Price">$49.00</td>
-                          <td data-th="Quantity">
-                              <input type="number" class="form-control form-control-lg text-center" value="1">
-                          </td>
-                          <td class="actions" data-th="">
-                              <div class="text-right">
-                                  <button class="btn btn-white border-secondary bg-white btn-md mb-2">
-                                      <i class="fas fa-sync"></i>
-                                  </button>
-                                  <button class="btn btn-white border-secondary bg-white btn-md mb-2">
-                                      <i class="fas fa-trash"></i>
-                                  </button>
-                              </div>
-                          </td>
-                      </tr>
-                  </tbody>
-              </table>
-              <div class="float-right text-right">
-                  <h4>Subtotal:</h4>
-                  <h1>$99.00</h1>
-              </div>
-          </div>
-      </div>
-      <div class="row mt-4 d-flex align-items-center">
-          <div class="col-sm-6 order-md-2 text-right">
-              <a href="catalog.html" class="btn btn-primary mb-4 btn-lg pl-5 pr-5">Checkout</a>
-          </div>
-          <div class="col-sm-6 mb-3 mb-m-1 order-md-1 text-md-left">
-              <a href="menu.html">
-                  <i class="fas fa-arrow-left mr-2"></i> Continue Shopping</a>
-          </div>
-      </div>
-  </div>
-  </section>
 
+  <div class="container mt-5 mb-5">
+    <div class="d-flex justify-content-center row">
+        <div class="col-md-8" id = "cart-body">
+            
+            <div class="d-flex flex-row justify-content-between align-items-center p-2 bg-white mt-4 px-3 rounded" style="box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;">
+                <div class="mr-1"><img class="rounded" src="assets/img/chicken_soup.jpg" width="70"></div>
+                <div class="d-flex flex-column align-items-center product-details"><span class="font-weight-bold">Chicken Soup</span>
+                    <div class="d-flex flex-row product-desc">
+                        <div class="color" style="margin-right: 10px;"><span class="text-grey">Product ID:</span><span class="font-weight-bold">1234</span></div>
+                        <div class="color"><span class="text-grey">Cart ID:</span><span class="font-weight-bold">1234</span></div>
+                    </div>
+                </div>
+                <div class="d-flex flex-row align-items-center qty">
+							 		<input id="quantity" type="number" value ="1" class="form-control quantity-input" style="margin-right: 20px;">
+                </div>
+                <div>
+                    <h5 class="text-grey">$20.00</h5>
+                </div>
+                
+                <div class="d-flex align-items-center" role = "button"><i class="fa fa-trash mb-1 text-danger"></i></div>
+            </div>
+
+            
+
+            
+            
+            <div class="d-flex flex-row align-items-center mt-3 p-2 bg-white rounded">
+              <button class="btn btn-dark btn-block btn-lg ml-2 backtoshopping-button" type="button" style="margin-right: 20px;" onclick = "location.href = 'menu.html'">Back to Shopping</button>
+              <button class="btn btn-dark btn-block btn-lg ml-2 pay-button " type="button" onclick = "location.href = 'page-checkout.html'" >Proceed to Pay</button>
+            </div>
+            
+        </div>
+    </div>
+  </div>
   
 </body>
 </html>
