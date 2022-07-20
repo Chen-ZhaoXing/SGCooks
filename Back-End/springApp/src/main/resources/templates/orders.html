@@ -19,11 +19,11 @@
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
   <!-- custom style css -->
-  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="/css/style.css" rel="stylesheet">
 
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
-  <script src = "js/menu.js" async></script> 
+  <script src = "/menu.js" async></script>
 
 
 </head>
@@ -42,21 +42,21 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav mx-auto">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link" aria-current="page" href="index">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="menu.html">Menu</a>
+            <a class="nav-link" href="menu">Menu</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
+            <a class="nav-link" href="contact">Contact</a>
           </li>
           
         </ul>
 
 
-        <button type="button" class="btn-brand navbar-right-btn" onclick = "location.href = 'orders.html'"><i class="fa fa-list-ul"></i></button>
-        <button type="button" class="btn-brand navbar-right-btn" onclick = "location.href = 'cart.html'" style = "margin-right: 30px;"><i class="fa fa-shopping-cart fa-lg"></i></button>  
-        <button type="button" class="btn btn-danger" onclick = "location.href = 'index.html'">Log Out</button>
+        <button type="button" class="btn-brand navbar-right-btn" onclick = "location.href = 'orders'"><i class="fa fa-list-ul"></i></button>
+        <button type="button" class="btn-brand navbar-right-btn" onclick = "location.href = 'cart'" style = "margin-right: 30px;"><i class="fa fa-shopping-cart fa-lg"></i></button>
+        <button type="button" class="btn btn-danger" onclick = "location.href = 'index'">Log Out</button>
 
       </div>
     </div>
@@ -66,13 +66,12 @@
   <!-- cart header start -->
   <div class="container-fluid container1-bg bg-icon my-5 py-6 cart-header">
     <div class="container text-center ">
-      <h1 class="display-5 mb-3 section-titles" style = "padding-top: 150px; font-size: 80px;">Your Cart</h1>
+      <h1 class="display-5 mb-3 section-titles" style = "padding-top: 150px; font-size: 80px;">Order History</h1>
     </div>
   </div>
   <!-- cart header end -->
 
   <!-- cart start -->
-
   <div class="container mt-5 mb-5">
     <div class="d-flex justify-content-center row">
         <div class="col-md-8" id = "cart-body">
@@ -92,21 +91,16 @@
                     <h5 class="text-grey">$20.00</h5>
                 </div>
                 
-                <div class="d-flex align-items-center" role = "button"><i class="fa fa-trash mb-1 text-danger"></i></div>
+                <div>
+                  <h5 class="text-grey">20/07/2022</h5>
+              </div>
             </div>
-
             
-
-            
-            
-            <div class="d-flex flex-row align-items-center mt-3 p-2 bg-white rounded">
-              <button class="btn btn-dark btn-block btn-lg ml-2 backtoshopping-button" type="button" style="margin-right: 20px;" onclick = "location.href = 'menu.html'">Back to Shopping</button>
-              <button class="btn btn-dark btn-block btn-lg ml-2 pay-button " type="button" onclick = "location.href = 'page-checkout.html'" >Proceed to Pay</button>
-            </div>
             
         </div>
     </div>
   </div>
+
   
 </body>
 </html>

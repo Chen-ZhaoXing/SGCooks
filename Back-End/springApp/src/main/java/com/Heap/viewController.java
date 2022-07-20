@@ -51,4 +51,9 @@ public class viewController {
         return "favourites";
     }
 
+    @GetMapping("/orders")
+    public String orders(){
+        return "orders";
+    }
+
 }
