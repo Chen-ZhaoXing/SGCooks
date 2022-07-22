@@ -1,8 +1,9 @@
 package com.Heap;
 
+import com.Heap.SGCooksUser.User;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
 
 @Controller
 public class viewController {
@@ -17,7 +18,8 @@ public class viewController {
     }
 
     @GetMapping("/login")
-    public String login(){
+    public String login(Model model){
+        model.addAttribute("user", new User());
         return "login";
     }
 

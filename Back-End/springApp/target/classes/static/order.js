@@ -2,9 +2,17 @@ getOrders();
 
 const orderBody = document.querySelector('.order-body');
 
+document.addEventListener("click", function(e){
+    if (e.target && e.target.classList.contains('btn-checkout')){
+        e.preventDefault();
+        orderPost(e);
+    }
+
+})
+
 async function orderPost(e) {
 
-    let email = $("#email").val();
+    let email = "novia@gmail.com"; //temp variable, has to be dynamic
     console.log(email);
     // DO POST
     $.ajax({
