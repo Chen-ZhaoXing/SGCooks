@@ -17,6 +17,14 @@
   <!-- custom style css -->
   <link href="/css/style.css" rel="stylesheet">
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+          integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="/menu.js" async></script>
+
+  <script src="/signup.js" async></script>
+
 </head>
 <body>
 
@@ -65,30 +73,30 @@
             <form>
 
               <div class="form-floating mb-3">
-                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                <label for="floatingInput">Name</label>
+                <input type="text" class="form-control" id="floatingName" placeholder="name@example.com">
+                <label for="floatingName">Name</label>
               </div>
 
               <div class="form-floating mb-3">
-                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                <label for="floatingInput">Email address</label>
+                <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com">
+                <label for="floatingEmail">Email address</label>
               </div>
               <div class="form-floating mb-3">
                 <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
                 <label for="floatingPassword">Password</label>
               </div>
               <div class="form-floating mb-3">
-                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                <label for="floatingPassword">Repeat Password</label>
+                <input type="password" class="form-control" id="floatingRepeatPassword" placeholder="Password">
+                <label for="floatingRepeatPassword">Repeat Password</label>
               </div>
-              <div class="form-check mb-3">
-                <input class="form-check-input" type="checkbox" value="" id="rememberPasswordCheck">
-                <label class="form-check-label" for="rememberPasswordCheck">
-                  Remember password
-                </label>
-              </div>
+<!--              <div class="form-check mb-3">-->
+<!--                <input class="form-check-input" type="checkbox" value="" id="rememberPasswordCheck">-->
+<!--                <label class="form-check-label" for="rememberPasswordCheck">-->
+<!--                  Remember password-->
+<!--                </label>-->
+<!--              </div>-->
               <div class="d-grid">
-                <button class="btn btn-brand btn-login text-uppercase fw-bold signin-btn" type="submit">Create
+                <button class="btn btn-brand btn-login text-uppercase fw-bold btn-signup" type="submit">Create
                   Account</button>
                 </div>
                 <hr class="my-4">
