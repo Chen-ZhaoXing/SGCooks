@@ -23,6 +23,8 @@ async function loginPost(e) {
         success: function (result) {
             console.log(result.access_token);
             window.location.replace("http://localhost:8080/menu"); //if security is implemented need to maybe run another function to send the access token to authorise login
+            window.localStorage.setItem("accessToken", result.access_token);
+            window.localStorage.setItem("email", formData.username);
         },
         error: function (e) {
             alert("Error!")

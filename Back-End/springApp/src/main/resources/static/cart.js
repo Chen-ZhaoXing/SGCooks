@@ -36,7 +36,7 @@ async function removeCartItem(e) {
 
 async function getCartItems() {
     console.log("test");
-    let email = "novia@gmail.com"; //temp variable, has to be dynamic
+    let email = localStorage.getItem("email"); //temp variable, has to be dynamic
     $.ajax({
         type : "GET",
         url : "api/v1/sgcooks/cart/?email="+ email,

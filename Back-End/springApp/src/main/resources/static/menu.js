@@ -783,7 +783,7 @@ async function addToCart(e){
   let recipeId = e.target.parentElement.parentElement.querySelector('.recipe-id').innerText; // !!! retrieves the value from the search bar
   console.log(recipeId);
 
-  let email = "novia@gmail.com";
+  let email = localStorage.getItem("email");
 
   $.ajax({
     type : "POST",

@@ -12,7 +12,7 @@ document.addEventListener("click", function(e){
 
 async function orderPost(e) {
 
-    let email = "novia@gmail.com"; //temp variable, has to be dynamic
+    let email = localStorage.getItem("email"); //temp variable, has to be dynamic
     console.log(email);
     // DO POST
     $.ajax({
@@ -34,7 +34,7 @@ async function orderPost(e) {
 
 
 async function getOrders() {
-    let email = "novia@gmail.com"; //temp variable, has to be dynamic
+    let email = localStorage.getItem("email"); //temp variable, has to be dynamic
     $.ajax({
         type: "GET",
         url: "api/v1/sgcooks/order/?email=" + email,
