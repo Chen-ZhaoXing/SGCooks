@@ -1,6 +1,6 @@
 
 document.addEventListener("click", function(e){
-    if (e.target && e.target.classList.contains('btn-signIn')){
+    if (e.target && e.target.classList.contains('signin-btn')){
         e.preventDefault();
         loginPost(e);
     }
@@ -27,9 +27,16 @@ async function loginPost(e) {
             window.localStorage.setItem("email", formData.username);
         },
         error: function (e) {
-            alert("Error!")
-            console.log("ERROR: ", e);
+            clickMe();
         }
     });
+
+    function clickMe() {
+        Swal.fire({
+            icon: 'error',
+            title: 'Wrong Password',
+            text: 'Kindly re-enter your password',
+        })
+    }
 
 }

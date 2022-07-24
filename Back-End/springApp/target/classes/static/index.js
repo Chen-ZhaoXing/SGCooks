@@ -1,6 +1,5 @@
 
 
-
 $(document).ready(function(){
   $("#testimonial-slider").owlCarousel({
       items:2,
@@ -14,3 +13,4 @@ $(document).ready(function(){
       autoPlay:true
   });
 });
+

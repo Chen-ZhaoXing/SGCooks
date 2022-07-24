@@ -1,6 +1,7 @@
 getCartItems();
 
 const cartBody = document.querySelector('.cart-body');
+const cartFooter = document.querySelector('.cart-footer');
 
 document.addEventListener("click", function(e){
     if (e.target && e.target.classList.contains('btn-delete')){
@@ -26,6 +27,7 @@ async function removeCartItem(e) {
         success : function(result) {
 
             console.log(result);
+            window.location.replace("http://localhost:8080/cart");
         },
         error : function(e) {
             alert("Error!")
@@ -47,6 +49,16 @@ async function getCartItems() {
             let cartItems = result;
 
             let size = cartItems.length;
+
+            if(size === 0){
+                cartBody.innerHTML = "<div class=\"d-flex flex-row justify-content-between align-items-center p-2 bg-white mt-4 px-3 rounded\" style=\"box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;\">\n" +
+                    "                You Have No Item In Your Cart!\n" +
+                    "            </div>          \n" +
+                    "            <div class=\"d-flex flex-row align-items-center mt-3 p-2 bg-white rounded\">\n" +
+                    "              <button class=\"btn btn-dark btn-block btn-lg ml-2 backtoshopping-button\" type=\"button\" style=\"margin-right: 20px;\" onclick = \"location.href = 'menu'\">Back to Shopping</button>\n" +
+                    "            </div>"
+                return
+            }
 
             let generatedHTML = "";
 
@@ -79,7 +91,14 @@ async function getCartItems() {
                `;
             } // keys for cart items; productid , email ; store both cartId and productId
             console.log(generatedHTML)
+            generatedHTML += "<div class=\"d-flex flex-row align-items-center mt-3 p-2 bg-white rounded\">\n" +
+                "              <button class=\"btn btn-dark btn-block btn-lg ml-2 backtoshopping-button\" type=\"button\" style=\"margin-right: 20px;\" onclick = \"location.href = 'menu'\">Back to Shopping</button>\n" +
+                "              <button class=\"btn btn-dark btn-block btn-lg ml-2 pay-button \" type=\"button\" onclick = \"location.href = 'page-checkout'\" >Proceed to Pay</button>\n" +
+                "            </div>\n" +
+                "            \n" +
+                "        </div>"
             cartBody.innerHTML = generatedHTML;
+
         },
         error : function(e) {
             $("#getResultDiv").html("<strong>Error</strong>");

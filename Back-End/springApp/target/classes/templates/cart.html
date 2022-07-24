@@ -60,12 +60,9 @@
                 </li>
             </ul>
 
-            <button type="button" class="navbar-right-btn" onclick="location.href = 'favourites'"><i
-                    class="fa fa-heart fa-lg"></i></button>
-            <button type="button" class="btn-brand navbar-right-btn" onclick="location.href = 'cart'"><i
-                    class="fa fa-shopping-cart fa-lg"></i></button>
-            <button type="button" class="btn-brand navbar-right-btn" onclick="location.href = 'signup'"><i
-                    class="fa fa-user fa-lg"></i></button>
+            <button type="button" class="btn-brand navbar-right-btn" onclick = "location.href = 'orders'"><i class="fa fa-list-ul"></i></button>
+            <button type="button" class="btn-brand navbar-right-btn" onclick = "location.href = 'cart'"><i class="fa fa-shopping-cart fa-lg"></i></button>
+            <button type="button" class="btn btn-danger" onclick = "location.href = 'index'">Log Out</button>
 
 
         </div>
@@ -85,17 +82,14 @@
 <div class="container mt-5 mb-5">
     <div class="d-flex justify-content-center row">
         <div class="col-md-8 cart-body" id="cart-body">
-
-            <div class="d-flex flex-row align-items-center mt-3 p-2 bg-white rounded">
-                <button class="btn btn-dark btn-block btn-lg ml-2 backtoshopping-button" type="button"
-                        style="margin-right: 20px;" onclick="location.href = 'menu.html'">Back to Shopping
-                </button>
-                <button class="btn btn-dark btn-block btn-lg ml-2 pay-button " type="button"
-                        onclick="location.href = 'page-checkout.html'">Proceed to Pay
-                </button>
+            <div class="d-flex flex-row justify-content-between align-items-center p-2 bg-white mt-4 px-3 rounded" style="box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;">
+                You Have No Item In Your Cart!
             </div>
-
+            <div class="d-flex flex-row align-items-center mt-3 p-2 bg-white rounded">
+                <button class="btn btn-dark btn-block btn-lg ml-2 backtoshopping-button" type="button" style="margin-right: 20px;" onclick = "location.href = 'menu.html'">Back to Shopping</button>
+            </div>
         </div>
+
     </div>
 </div>
 

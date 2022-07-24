@@ -1,6 +1,6 @@
 
 document.addEventListener("click", function(e){
-    if (e.target && e.target.classList.contains('btn-signup')){
+    if (e.target && e.target.classList.contains('signin-btn')){
         e.preventDefault();
         signUpPost(e);
     }

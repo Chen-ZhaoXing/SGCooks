@@ -48,7 +48,7 @@ async function getOrders() {
             let generatedHTML = "";
 
             for (var i = 0; i < size; i++) {
-                let recipeId = order[i].orderItems[i].productId;
+                let recipeId = order[i].orderItems[0].productId;
                 const url1 = `https://api.spoonacular.com/recipes/${recipeId}/information?apiKey=${apiKey}`;
 
                 const response1 = await fetch(url1);
@@ -60,27 +60,24 @@ async function getOrders() {
 
                 generatedHTML += `
                      <div class="d-flex flex-row justify-content-between align-items-center p-2 bg-white mt-4 px-3 rounded" style="box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;">
-                        <div class="mr-1"><img class="rounded" src="assets/img/chicken_soup.jpg" width="70"></div>
-                        <div class="d-flex flex-column align-items-center product-details"><span class="font-weight-bold">${data.title}</span>
+                        <div class="mr-1"><img class="rounded" src="${data.image}" width="70"></div>
+                        <div class="d-flex flex-column align-items-center product-details"><span class="font-weight-bold">${data.title} ,etc</span>
                             <div class="d-flex flex-row product-desc">
-                                <div class="color" style="margin-right: 10px;"><span class="text-grey">Product ID:</span><span class="font-weight-bold">1234</span></div>
-                                <div class="color"><span class="text-grey">Cart ID:</span><span class="font-weight-bold">1234</span></div>
                             </div>
                         </div>
-                        <div class="d-flex flex-row align-items-center qty">
-                                <input id="quantity" type="number" value ="1" class="form-control quantity-input" style="margin-right: 20px;">
-                        </div>
                         <div>
-                            <h5 class="text-grey">$20.00</h5>
-                        </div>
-                        
-                        <div>
-                          <h5 class="text-grey">20/07/2022</h5>
+                          <h5 class="text-grey" style="margin-right: 10px;">${order[i].createdDate.substring(0,10)}</h5>
                       </div>
+                      <div>
+                  <button type="button" class="btn-brand navbar-right-btn" onclick = "location.href = 'order'" style = "margin-right: 30px;">
+                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                  </button>  
+                </div>
                     </div>
     
                 `;
             } // keys for orders: productid , email ; store both cartId and productId
+            console.log(generatedHTML)
             orderBody.innerHTML = generatedHTML;
 
         },

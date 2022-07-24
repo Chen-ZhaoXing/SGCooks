@@ -33,7 +33,7 @@ public class viewController {
         return "contact";
     }
 
-    @GetMapping("/page_checkout")
+    @GetMapping("/page-checkout")
     public String pagecheckout(){
         return "page-checkout";
     }

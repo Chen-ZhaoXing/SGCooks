@@ -1,4 +1,5 @@
 
+/* google font (poppins) */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700;1,800&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
@@ -59,6 +60,16 @@ img {
   text-decoration: none;
 }
 
+.btn-start {
+  background-color: black;
+  color: #f4b8aa;
+}
+
+.btn-start:hover {
+  color: black;
+  background-color: #f4b8aa;
+}
+
 /* navbar start */
 
 .navbar ul {
@@ -73,6 +84,7 @@ img {
 .brand_logo {
   width: 80%;
   height: 80%;
+  
   justify-content: center;
   margin-left: 10px;
   cursor: auto;
@@ -417,10 +429,14 @@ INDEX.HTML
 .owl-theme .owl-controls{
   margin-top: 10px;
 }
-.owl-theme .owl-controls .owl-page span {
+.owl-theme .owl-controls .owl-page span{
   background: #5e5f5f;
   opacity: 1;
   transition: all 0.4s ease 0s;
+}
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span{
+  background: ;
 }
 .owl-theme .owl-controls .owl-page.active span{
   width: 22px;
@@ -633,7 +649,7 @@ a {
   color: #000;
   font-size: 13px; }
 
-.btn, .form-control, .custom-select {
+.form-control, .custom-select {
   height: 45px;
   border-radius: 0; }
 
@@ -649,25 +665,6 @@ a {
     box-shadow: none;
     border-color: #000; }
 
-.btn {
-  border: none;
-  border-radius: 0;
-  font-size: 11px;
-  letter-spacing: .2rem;
-  text-transform: uppercase;
-  border-radius: 30px !important; }
-  .btn.btn-primary {
-    border-radius: 30px;
-    background: #ef4339;
-    color: #fff;
-    -webkit-box-shadow: 0 15px 30px 0 rgba(239, 67, 57, 0.2);
-    box-shadow: 0 15px 30px 0 rgba(239, 67, 57, 0.2); }
-  .btn:hover {
-    color: #fff; }
-  .btn:active, .btn:focus {
-    outline: none;
-    -webkit-box-shadow: none;
-    box-shadow: none; }
 
 .contact-wrap {
   -webkit-box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.05);
@@ -912,34 +909,71 @@ CART.HTML
   height: 300px;
 }
 
-.cart-container {
-  border: 1px solid rgba(0, 0, 0, 0.05);
-  padding: 30px;
-}
-.cart-container .cart-body {
-  border-top: 1px solid rgba(0, 0, 0, 0.05);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-  padding: 30px 0 20px;
-  margin: 20px 0 30px;
+
+.size span {
+  font-size: 11px;
 }
 
-.btn-checkout{
-  border-radius: 4px;
-  padding: 10px 30px;
-  color: whitesmoke;
-  background-color: #222;
-  font-weight: 600;
-  font-size: 15px;
+.color span {
+  font-size: 11px;
+}
+
+.product-deta {
+  margin-right: 70px;
+}
+
+
+.text-grey {
+  color: #a39f9f;
+}
+
+.qty i {
+  font-size: 11px;
+}
+.pay-button {
+  color: #f4b8aa;
+  background-color: black;
+  font-family: "Roboto Slab";
   border: none;
-  transition: background-color, color 0.15s;
-  width:200px;
-  align-items: center;
 }
 
-.btn-checkout:hover {
-  background-color: #F4B8AA;
+.pay-button:hover {
+  background-color: #f4b8aa;
   color: black;
+  font-family: "Roboto Slab";
+  border: none;
 }
+
+.pay-button:focus,
+.pay-button:active {
+  background-color: #f4b8aa;
+  color: black;
+  font-family: "Roboto Slab";
+  border: black;
+}
+
+.backtoshopping-button {
+  background-color: #f4b8aa;
+  color: black;
+  font-family: "Roboto Slab";
+  border: none;
+}
+
+.backtoshopping-button:hover {
+  color: #f4b8aa;
+  background-color: black;
+  font-family: "Roboto Slab";
+  border: none;
+}
+
+.backtoshopping-button :focus,
+.backtoshopping-button :active {
+  color: #f4b8aa;
+  background-color: black;
+  font-family: "Roboto Slab";
+  border: none;
+}
+
 
 
 
