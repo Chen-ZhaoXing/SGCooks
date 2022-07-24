@@ -189,14 +189,14 @@ INDEX.HTML
 }
 
 .carousel .item {
-  height: 200px;
+  height: 500px;
 }
 
 .item img {
   position: absolute;
   top: 0;
   left: 0;
-  min-height: 200px;
+  min-height: 400px;
 }
 
 .item {
@@ -434,10 +434,7 @@ INDEX.HTML
   opacity: 1;
   transition: all 0.4s ease 0s;
 }
-.owl-theme .owl-controls .owl-page.active span,
-.owl-theme .owl-controls.clickable .owl-page:hover span{
-  background: ;
-}
+
 .owl-theme .owl-controls .owl-page.active span{
   width: 22px;
   height: 12px;

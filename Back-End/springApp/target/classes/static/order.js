@@ -59,7 +59,7 @@ async function getOrders() {
                 console.log(data.title);
 
                 generatedHTML += `
-                     <div class="d-flex flex-row justify-content-between align-items-center p-2 bg-white mt-4 px-3 rounded" style="box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 32px;">
+                     <div class="d-flex flex-row justify-content-between align-items-center p-2 bg-white mt-4 px-3 rounded" style="box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;">
                         <div class="mr-1"><img class="rounded" src="${data.image}" width="70"></div>
                         <div class="d-flex flex-column align-items-center product-details"><span class="font-weight-bold">${data.title} ,etc</span>
                             <div class="d-flex flex-row product-desc">
