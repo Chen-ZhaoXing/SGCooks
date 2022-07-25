@@ -168,11 +168,16 @@
       confirmButtonText: 'Yes, proceed to payment!'
     }).then((result) => {
       if (result.isConfirmed) {
-        Swal.fire(
-                'Order Placed Successfully',
-                'kindly check your email for your order invoice and delivery details',
-                'success'
-        )
+        Swal.fire({
+          title: 'Order Placed Successfully',
+          html: 'kindly check your email for your order invoice and delivery details',
+          timer: 5000,
+          timerProgressBar: true,
+          willClose: () => {
+            clearInterval(timerInterval)
+
+          }
+        })
         window.location.replace("http://localhost:8080/orders")
       }
     })
