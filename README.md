@@ -15,15 +15,15 @@ Code submission for [SMU .Hack HEAP 2022]
 
 ## Core Features
 
-*** Home ***
+***Home***
 > Landing page explaining what is SGCooks, including a menu preview, customer testimonials and a footer
 
-*** Menu ***
+***Menu***
 > Search from a list of 5,000+ recipes based on ingredients included
 > Search for cuisine-specific or diet-specific recipes with the filter buttons
 > View the instructions, image of ingredients as well as equipment needed for each recipe
 
-***  Cart , Checkout & Order History ***
+***Cart , Checkout & Order History***
 > Add recipe kits to your own cart after signing up & logging in
 > Order history will reflected upon checkout (note: payment section is a dummy payment section)
 
