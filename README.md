@@ -50,6 +50,7 @@ Download the latest version and choose the installer applicable
 ![PostgreSQL Download Page](https://github.com/Newbieshine/SGCooks/blob/main/set-up%20resources/Postgres-Download.PNG?raw=true)
 
 Follow through the installation process
+
 ![PostgreSQL installation](https://github.com/Newbieshine/SGCooks/blob/main/set-up%20resources/postgres-installation1.PNG?raw=true)
 
 After installation, open cmd and type "psql -U postgres" as shown and log in with the password set up during installation
