@@ -8,35 +8,38 @@
 | Platform                          | Description                                                                                                                    |
 :---------------------------------- | :----------------------------------------------------------------------------------------------------------------------------: |
 | Youtube                           | [App Demo]()      |
-| Figma                             | [Wireframes]()    |
+| Figma                             | [Initial Wireframes]()    |
 
 
 Code submission for [SMU .Hack HEAP 2022]
 
 ## Core Features
 
-***a***
-> 
+*** Home ***
+> Landing page explaining what is SGCooks, including a menu preview, customer testimonials and a footer
 
-***b***
-> 
+*** Menu ***
+> Search from a list of 5,000+ recipes based on ingredients included
+> Search for cuisine-specific or diet-specific recipes with the filter buttons
+> View the instructions, image of ingredients as well as equipment needed for each recipe
 
-***c***
-> 
-
-******
-> 
+***  Cart , Checkout & Order History ***
+> Add recipe kits to your own cart after signing up & logging in
+> Order history will reflected upon checkout (note: payment section is a dummy payment section)
 
 ---
 ## **Technology Stack**
-- [HTML]()
-- [Bootstrap ]()
-- [Vanilla JavaScript]()
-- [SpringBoot]()
+- [HTML & CSS]()
+- [Bootstrap ](https://getbootstrap.com/)
+- [Vanilla JavaScript](https://developer.mozilla.org/en-US/)
+- [SpringBoot](https://spring.io/projects/spring-boot)
 - [PostgreSQL](https://www.postgresql.org/download/)
+- [Spoonacular API](https://spoonacular.com/food-api)
+- [Sweet Alert 2](https://sweetalert2.github.io/)
+
 
 ## **IDE Used**
-- [Intellij IDEA](https://www.jetbrains.com/idea/)
+- [Intellij IDEA](https://www.jetbrains.com/idea/) 
 
 ## Local Deployment
 
@@ -78,6 +81,3 @@ After a successful launch, enter "localhost:8080/" in your browser to access the
 
 ## Disclaimer
 - We do not own or license any copyrights in the images used in the application. You may use the Services and the contents contained in the Services soley for your own individual non-commercial and informational purposes only.
-
-
-
