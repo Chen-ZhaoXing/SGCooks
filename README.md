@@ -39,10 +39,13 @@ Code submission for [SMU .Hack HEAP 2022]
 - [Intellij IDEA](https://www.jetbrains.com/idea/)
 
 ## Local Deployment
+
 **Installations required**
+
 Kindly install [Intellij IDEA](https://www.jetbrains.com/idea/) IDEA and [PostgreSQL](https://www.postgresql.org/download/)
 
 **PostgreSQL Set-Up**
+
 Download the latest version and choose the installer applicable 
 ![PostgreSQL Download Page](https://github.com/Newbieshine/SGCooks/blob/main/set-up%20resources/Postgres-Download.PNG?raw=true)
 
@@ -53,7 +56,8 @@ After which enter "CREATE DATABASE sgcooks;"
 After installation, open cmd and type "psql -U postgres" as shown and log in with the password set up during installation
 ![PostgreSQL login](https://github.com/Newbieshine/SGCooks/blob/main/set-up%20resources/postgres-installation1.PNG?raw=true)
 
-After which enter "CREATE DATABASE sgcooks;"
+After which enter "CREATE DATABASE sgcooks;" as shown below
+
 ![create database in postgres](https://github.com/Newbieshine/SGCooks/blob/main/set-up%20resources/create-database.PNG?raw=true)
 
 
