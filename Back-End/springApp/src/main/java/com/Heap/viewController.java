@@ -43,15 +43,6 @@ public class viewController {
         return "signup";
     }
 
-    @GetMapping("/thankyou")
-    public String thankyou(){
-        return "thankyou";
-    }
-
-    @GetMapping("/favourites")
-    public String favourites(){
-        return "favourites";
-    }
 
     @GetMapping("/orders")
     public String orders(){

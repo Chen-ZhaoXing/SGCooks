@@ -6,7 +6,7 @@ const chineseFilter = document.querySelector('.chinese');
 
 const container = document.querySelector('.container');
 let searchQuery = '';
-const apiKey = "02b6ed3072c94a119a77ae6a1155edb5";
+const apiKey = "f4a4c702a03b4236807d9a23325cf6f5";
 
 /* Alternatte API keys for spoonacular API
 693d8ac79dcc44fbb0536b51643ee240

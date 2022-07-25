@@ -7,11 +7,19 @@ document.addEventListener("click", function(e){
     if (e.target && e.target.classList.contains('btn-delete')){
         e.preventDefault();
         removeCartItem(e);
-    } else if (e.target && e.target.classList.contains('btn-uparrow')) {
-        e.preventDefault();
-        changeItemQuantity();
     }
 
+})
+
+document,addEventListener("change", function (e) {
+    if (e.target && e.target.classList.contains('quantity-change')){
+        e.preventDefault();
+        let cartItemId = e.target.parentElement.parentElement.querySelector('.cart-id').innerText;
+        let quantity = e.target.parentElement.parentElement.querySelector('.quantity-change').value;
+        console.log(cartItemId);
+        console.log(quantity);
+        changeItemQuantity(e,cartItemId,quantity);
+    }
 })
 
 async function removeCartItem(e) {
@@ -76,19 +84,28 @@ async function getCartItems() {
                       <div class="d-flex flex-column align-items-center product-details"><span class="font-weight-bold">${data.title}</span>
                           <div class="d-flex flex-row product-desc">
                               <div class="color" style="margin-right: 10px;"><span class="text-grey">Product ID:</span><span class="font-weight-bold">${recipeId}</span></div>
-                              <div class="color"><span class="text-grey">Cart ID:</span><span class="font-weight-bold">${cartItems[i].id}</span></div> <!-- REMEMBER to hide cartID-->
+                              <div class="color"><span class="text-grey">Cart ID:</span><span class="font-weight-bold cart-id">${cartItems[i].id}</span></div> <!-- REMEMBER to hide cartID-->
                           </div>
                       </div>
                       <div class="d-flex flex-row align-items-center qty">
-                          <input id="quantity" type="number" value ="1" class="form-control quantity-input" style="margin-right: 20px;">
+<!--                          <input id="quantity" type="number" value ="1" class="form-control quantity-input" style="margin-right: 20px;">-->
+                            <select class="form-control quantity-change" id="exampleFormControlSelect1">
+                                  <option hidden>${cartItems[i].quantity}</option>
+                                  <option>1</option>
+                                  <option>2</option>
+                                  <option>3</option>
+                                  <option>4</option>
+                                  <option>5</option>
+                            </select>
                       </div>
                       <div>
                           <h5 class="text-grey"> $${price}.00</h5>
                       </div>
     
-                      <div class="d-flex align-items-center" role = "button"><i class="fa fa-trash mb-1 text-danger"></i></div>
+                      <div class="d-flex align-items-center" role = "button"><i class="fa fa-trash mb-1 text-danger btn-delete"></i></div>
                   </div>
                `;
+                console.log(i);
             } // keys for cart items; productid , email ; store both cartId and productId
             console.log(generatedHTML)
             generatedHTML += "<div class=\"d-flex flex-row align-items-center mt-3 p-2 bg-white rounded\">\n" +
@@ -109,21 +126,21 @@ async function getCartItems() {
 
 }
 
-async function changeItemQuantity(e) {
+async function changeItemQuantity(e, cartId, quantity) {
     let email = localStorage.getItem("email");
-    let cartItemId = e.target.parentElement.parentElement.querySelector('.cart-id').innerText;
-    let quantity = e.target.parentElement.parentElement.querySelector('.quantity').innerText;
+
+    console.log(quantity);
 
     $.ajax({
         type : "PUT",
         contentType : "application/json",
-        url : "api/v1/sgcooks/cart/changeCartItemQuantity?email=" + email + "&cartItemId=" + cartItemId + "&quantity=" + quantity,
+        url : "api/v1/sgcooks/cart/changeCartItemQuantity?email=" + email + "&cartItemId=" + cartId + "&quantity=" + quantity,
         //data : JSON.stringify(formData),
         dataType : 'text',
         success : function(result) {
 
 
-            console.log(result);
+            console.log(quantity);
         },
         error : function(e) {
             alert("Error!")
