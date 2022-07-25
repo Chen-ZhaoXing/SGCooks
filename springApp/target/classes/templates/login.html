@@ -133,9 +133,9 @@
       }).then((result) => {
         /* Read more about isConfirmed, isDenied below */
         if (result.isConfirmed) {
-          window.location.replace("http://localhost:8080/signup")
-        } else if (result.isDenied) {
           window.location.replace("http://localhost:8080/login")
+        } else if (result.isDenied) {
+          window.location.replace("http://localhost:8080/signup")
         }
       })
     }

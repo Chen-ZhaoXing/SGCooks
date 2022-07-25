@@ -33,8 +33,6 @@
   <!-- custom style css -->
   <link href="/css/style.css" rel="stylesheet">
 
-
-
 </head>
 <body>
 
@@ -57,7 +55,7 @@
             <a class="nav-link" onclick="promptLogin()">Menu</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" onclick="promptLogin()">Contact</a>
+            <a class="nav-link menu-navlink" onclick="promptLogin()">Contact</a>
           </li>
 
         </ul>
@@ -385,9 +383,9 @@
       }).then((result) => {
           /* Read more about isConfirmed, isDenied below */
           if (result.isConfirmed) {
-              window.location.replace("http://localhost:8080/signup")
-          } else if (result.isDenied) {
               window.location.replace("http://localhost:8080/login")
+          } else if (result.isDenied) {
+              window.location.replace("http://localhost:8080/signup")
           }
       })
   }

@@ -171,14 +171,10 @@
         Swal.fire({
           title: 'Order Placed Successfully',
           html: 'kindly check your email for your order invoice and delivery details',
-          timer: 5000,
-          timerProgressBar: true,
-          willClose: () => {
-            clearInterval(timerInterval)
-
-          }
+          confirmButtonText: 'Ok',
+        }).then((result) => {
+          window.location.replace("http://localhost:8080/orders")
         })
-        window.location.replace("http://localhost:8080/orders")
       }
     })
   }
