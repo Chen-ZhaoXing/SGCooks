@@ -44,7 +44,7 @@ Kindly install [Intellij IDEA](https://www.jetbrains.com/idea/) IDEA and [Postgr
 
 **PostgreSQL Set-Up**
 Choose the applicable OS  
-![PostgreSQL Download Page](/set-up resources/Postgres-Download.PNG)
+![PostgreSQL Download Page](https://github.com/Newbieshine/SGCooks/blob/main/set-up%20resources/Postgres-Download.PNG?raw=true)
 
 follow through the installation process (Image)
 
