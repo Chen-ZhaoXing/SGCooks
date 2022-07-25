@@ -58,6 +58,7 @@ After which enter "CREATE DATABASE sgcooks;"
 
 
 **Cloning the repo and opening with Intellij**
+
 Open command prompt, cd to your prefer directory and enter "git clone https://github.com/Newbieshine/SGCooks.git"
 ![Cloning repo](https://github.com/Newbieshine/SGCooks/blob/main/set-up%20resources/git-clone.PNG?raw=true)
 
