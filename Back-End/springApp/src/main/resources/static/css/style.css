@@ -851,6 +851,7 @@ MENU.HTML
   transition: background-color, color 0.15s;
   width:200px;
   align-items: center;
+  margin-bottom: 10px;
 }
 
 .btn-addtocart:hover {
@@ -869,6 +870,7 @@ MENU.HTML
   transition: background-color, color 0.15s;
   width:200px;
   align-items: center;
+
 }
 
 .btn-viewrecipe:hover {

@@ -6,7 +6,7 @@ const chineseFilter = document.querySelector('.chinese');
 
 const container = document.querySelector('.container');
 let searchQuery = '';
-const apiKey = "02b6ed3072c94a119a77ae6a1155edb5";
+const apiKey = "f4a4c702a03b4236807d9a23325cf6f5";
 
 /* Alternatte API keys for spoonacular API
 693d8ac79dcc44fbb0536b51643ee240
@@ -59,7 +59,11 @@ async function allRecipes() {
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body" id="recipe-details"> 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <div class="d-flex justify-content-center">
+                  <div class="spinner-border" role="status">
+                    <span class="sr-only"></span>
+                  </div>
+                </div> 
               </div>
             </div>
           </div>
@@ -118,7 +122,11 @@ async function searchRecipes() {
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body" id="recipe-details"> 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <div class="d-flex justify-content-center">
+                  <div class="spinner-border" role="status">
+                    <span class="sr-only"></span>
+                  </div>
+                </div> 
               </div>
             </div>
           </div>
@@ -199,7 +207,11 @@ async function searchChineseRecipes(e){
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body" id="recipe-details"> 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <div class="d-flex justify-content-center">
+                  <div class="spinner-border" role="status">
+                    <span class="sr-only"></span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -245,8 +257,12 @@ async function searchIndianRecipes(e){
                 <h5 class="modal-title" id="staticBackdropLabel"></h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
-              <div class="modal-body" id="recipe-details"> 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              <div class="modal-body" id="recipe-details">                
+               <div class="d-flex justify-content-center">
+                  <div class="spinner-border" role="status">
+                    <span class="sr-only"></span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -293,7 +309,11 @@ async function searchThaiRecipes(e){
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body" id="recipe-details"> 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <div class="d-flex justify-content-center">
+                  <div class="spinner-border" role="status">
+                    <span class="sr-only"></span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
