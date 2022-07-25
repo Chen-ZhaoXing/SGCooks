@@ -76,7 +76,7 @@ async function getOrders() {
                           <h5 class="text-grey" style="margin-right: 10px;">${order[i].createdDate.substring(0,10)}</h5>
                       </div>
                       <div>
-                  <button type="button" class="btn-brand navbar-right-btn" onclick = "location.href = 'order'" style = "margin-right: 30px;">
+                  <button type="button" class="btn-brand navbar-right-btn" onclick = "location.href = 'orders'" style = "margin-right: 30px;">
                     <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
                   </button>  
                 </div>
