@@ -1,19 +1,386 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="92102672-6a57-444c-b2eb-03f8bb110c2a" name="Changes" comment="" />
+    <list default="true" id="92102672-6a57-444c-b2eb-03f8bb110c2a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/Back-End.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/aws.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/dbnavigator.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/jpa-buddy.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/jsLibraryMappings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__com_auth0_java_jwt_3_19_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__com_fasterxml_classmate_1_5_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_13_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_13_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_13_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_13_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_13_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_13_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_7_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__com_sun_activation_jakarta_activation_1_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__com_sun_istack_istack_commons_runtime_3_0_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__com_sun_mail_jakarta_mail_1_6_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__com_zaxxer_HikariCP_4_0_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__io_github_classgraph_classgraph_4_8_139.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__jakarta_activation_jakarta_activation_api_1_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__jakarta_annotation_jakarta_annotation_api_1_3_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__jakarta_persistence_jakarta_persistence_api_2_2_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__jakarta_transaction_jakarta_transaction_api_1_3_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__jakarta_xml_bind_jakarta_xml_bind_api_2_3_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_12_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_12_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__net_minidev_accessors_smart_2_4_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__net_minidev_json_smart_2_4_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_17_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_17_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_63.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_9_0_63.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_63.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_9_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__org_assertj_assertj_core_3_22_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__org_attoparser_attoparser_2_0_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__org_checkerframework_checker_qual_3_5_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__org_glassfish_jaxb_jaxb_runtime_2_3_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__org_glassfish_jaxb_txw2_2_3_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__org_hamcrest_hamcrest_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_1_2_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__org_hibernate_hibernate_core_5_6_9_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__org_jboss_jandex_2_4_2_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_4_3_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_8_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_8_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_8_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_8_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_8_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_8_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__org_mockito_mockito_core_4_5_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__org_mockito_mockito_junit_jupiter_4_5_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__org_objenesis_objenesis_3_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__org_ow2_asm_asm_9_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__org_postgresql_postgresql_42_3_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__org_projectlombok_lombok_1_18_24.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_36.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_36.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_7_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_7_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__org_springframework_boot_spring_boot_devtools_2_7_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_7_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_7_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_2_7_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_7_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_7_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_7_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_mail_2_7_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_2_7_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_7_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_thymeleaf_2_7_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_7_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_7_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_7_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_7_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_7_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_2_7_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__org_springframework_security_spring_security_config_5_7_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__org_springframework_security_spring_security_core_5_7_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__org_springframework_security_spring_security_crypto_5_7_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__org_springframework_security_spring_security_test_5_7_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__org_springframework_security_spring_security_web_5_7_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__org_springframework_spring_aop_5_3_20.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__org_springframework_spring_aspects_5_3_20.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__org_springframework_spring_beans_5_3_20.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__org_springframework_spring_context_5_3_20.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__org_springframework_spring_context_support_5_3_20.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__org_springframework_spring_core_5_3_20.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__org_springframework_spring_expression_5_3_20.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__org_springframework_spring_jcl_5_3_20.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__org_springframework_spring_jdbc_5_3_20.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__org_springframework_spring_orm_5_3_20.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__org_springframework_spring_test_5_3_20.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__org_springframework_spring_tx_5_3_20.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__org_springframework_spring_web_5_3_20.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__org_springframework_spring_webmvc_5_3_20.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__org_thymeleaf_extras_thymeleaf_extras_java8time_3_0_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__org_thymeleaf_thymeleaf_3_0_15_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__org_thymeleaf_thymeleaf_spring5_3_0_15_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__org_unbescape_unbescape_1_1_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__org_webjars_bootstrap_5_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__org_webjars_jquery_3_6_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__org_webjars_popper_js_2_9_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__org_webjars_webjars_locator_core_0_50.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_9_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/libraries/Maven__org_yaml_snakeyaml_1_30.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/sqldialects.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/BackEnd.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/src/main/java/com/Heap/Cart/Cart.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/src/main/java/com/Heap/Cart/CartController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/src/main/java/com/Heap/Cart/CartRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/src/main/java/com/Heap/Cart/CartService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/src/main/java/com/Heap/Common/ApiResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/src/main/java/com/Heap/Exceptions/CustomException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/src/main/java/com/Heap/HeapProjectApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/src/main/java/com/Heap/Order/Order.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/src/main/java/com/Heap/Order/OrderController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/src/main/java/com/Heap/Order/OrderItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/src/main/java/com/Heap/Order/OrderItemsRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/src/main/java/com/Heap/Order/OrderItemsService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/src/main/java/com/Heap/Order/OrderRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/src/main/java/com/Heap/Order/OrderService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/src/main/java/com/Heap/Registration/EmailValidator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/src/main/java/com/Heap/Registration/RegistrationController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/src/main/java/com/Heap/Registration/RegistrationRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/src/main/java/com/Heap/Registration/RegistrationService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/src/main/java/com/Heap/Registration/token/ConfirmationToken.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/src/main/java/com/Heap/Registration/token/ConfirmationTokenRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/src/main/java/com/Heap/Registration/token/ConfirmationTokenService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/src/main/java/com/Heap/SGCooksUser/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/src/main/java/com/Heap/SGCooksUser/UserConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/src/main/java/com/Heap/SGCooksUser/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/src/main/java/com/Heap/SGCooksUser/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/src/main/java/com/Heap/SGCooksUser/UserRole.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/src/main/java/com/Heap/SGCooksUser/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/src/main/java/com/Heap/Security/CustomAuthenticationFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/src/main/java/com/Heap/Security/CustomAuthorizationFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/src/main/java/com/Heap/Security/PasscodeEncoder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/src/main/java/com/Heap/Security/config/WebSecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/src/main/java/com/Heap/viewController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/src/main/resources/static/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/src/main/resources/static/cart.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/src/main/resources/static/css/all.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/src/main/resources/static/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/src/main/resources/static/css/menu.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/src/main/resources/static/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/src/main/resources/static/img/avatar1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/src/main/resources/static/img/avatar2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/src/main/resources/static/img/avatar3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/src/main/resources/static/img/chicken_soup.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/src/main/resources/static/img/chinese_header.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/src/main/resources/static/img/company-logos/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/src/main/resources/static/img/company-logos/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/src/main/resources/static/img/company-logos/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/src/main/resources/static/img/company-logos/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/src/main/resources/static/img/company-logos/5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/src/main/resources/static/img/cooking-modified.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/src/main/resources/static/img/cooking.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/src/main/resources/static/img/indian_header.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/src/main/resources/static/img/laksa_hd.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/src/main/resources/static/img/logo_black.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/src/main/resources/static/img/logo_black2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/src/main/resources/static/img/logo_white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/src/main/resources/static/img/menu/neoguri.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/src/main/resources/static/img/menu/paneer.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/src/main/resources/static/img/menu/potstickers.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/src/main/resources/static/img/picked_produce-modified.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/src/main/resources/static/img/picked_produce.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/src/main/resources/static/img/produce.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/src/main/resources/static/img/produce2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/src/main/resources/static/img/salmon.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/src/main/resources/static/img/shrimp_veggies-modified.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/src/main/resources/static/img/shrimp_veggies.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/src/main/resources/static/img/spagetti.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/src/main/resources/static/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/src/main/resources/static/login.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/src/main/resources/static/menu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/src/main/resources/static/order.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/src/main/resources/static/signup.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/src/main/resources/static/style.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/src/main/resources/static/user.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/src/main/resources/templates/cart.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/src/main/resources/templates/contact.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/src/main/resources/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/src/main/resources/templates/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/src/main/resources/templates/menu.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/src/main/resources/templates/orders.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/src/main/resources/templates/page-checkout.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/src/main/resources/templates/signup.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/target/classes/com/Heap/Cart/Cart.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/target/classes/com/Heap/Cart/CartController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/target/classes/com/Heap/Cart/CartRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/target/classes/com/Heap/Cart/CartService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/target/classes/com/Heap/Common/ApiResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/target/classes/com/Heap/Exceptions/CustomException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/target/classes/com/Heap/HeapProjectApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/target/classes/com/Heap/Order/Order.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/target/classes/com/Heap/Order/OrderController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/target/classes/com/Heap/Order/OrderItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/target/classes/com/Heap/Order/OrderItemsRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/target/classes/com/Heap/Order/OrderItemsService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/target/classes/com/Heap/Order/OrderRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/target/classes/com/Heap/Order/OrderService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/target/classes/com/Heap/Registration/EmailValidator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/target/classes/com/Heap/Registration/RegistrationController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/target/classes/com/Heap/Registration/RegistrationRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/target/classes/com/Heap/Registration/RegistrationService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/target/classes/com/Heap/Registration/token/ConfirmationToken.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/target/classes/com/Heap/Registration/token/ConfirmationTokenRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/target/classes/com/Heap/Registration/token/ConfirmationTokenService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/target/classes/com/Heap/SGCooksUser/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/target/classes/com/Heap/SGCooksUser/UserConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/target/classes/com/Heap/SGCooksUser/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/target/classes/com/Heap/SGCooksUser/UserRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/target/classes/com/Heap/SGCooksUser/UserRole.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/target/classes/com/Heap/SGCooksUser/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/target/classes/com/Heap/Security/CustomAuthenticationFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/target/classes/com/Heap/Security/CustomAuthorizationFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/target/classes/com/Heap/Security/PasscodeEncoder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/target/classes/com/Heap/Security/config/WebSecurityConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/target/classes/com/Heap/viewController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/target/classes/static/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/target/classes/static/cart.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/target/classes/static/css/all.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/target/classes/static/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/target/classes/static/css/menu.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/target/classes/static/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/target/classes/static/img/avatar1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/target/classes/static/img/avatar2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/target/classes/static/img/avatar3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/target/classes/static/img/chicken_soup.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/target/classes/static/img/chinese_header.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/target/classes/static/img/company-logos/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/target/classes/static/img/company-logos/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/target/classes/static/img/company-logos/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/target/classes/static/img/company-logos/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/target/classes/static/img/company-logos/5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/target/classes/static/img/cooking-modified.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/target/classes/static/img/cooking.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/target/classes/static/img/indian_header.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/target/classes/static/img/laksa_hd.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/target/classes/static/img/logo_black.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/target/classes/static/img/logo_black2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/target/classes/static/img/logo_white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/target/classes/static/img/menu/neoguri.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/target/classes/static/img/menu/paneer.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/target/classes/static/img/menu/potstickers.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/target/classes/static/img/picked_produce-modified.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/target/classes/static/img/picked_produce.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/target/classes/static/img/produce.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/target/classes/static/img/produce2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/target/classes/static/img/salmon.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/target/classes/static/img/shrimp_veggies-modified.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/target/classes/static/img/shrimp_veggies.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/target/classes/static/img/spagetti.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/target/classes/static/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/target/classes/static/login.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/target/classes/static/menu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/target/classes/static/order.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/target/classes/static/signup.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/target/classes/static/style.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/target/classes/static/user.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/target/classes/templates/cart.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/target/classes/templates/contact.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/target/classes/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/target/classes/templates/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/target/classes/templates/menu.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/target/classes/templates/orders.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/target/classes/templates/page-checkout.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/springApp/target/classes/templates/signup.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front-End/assets/css/all.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front-End/assets/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front-End/assets/css/menu.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front-End/assets/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front-End/assets/img/avatar1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front-End/assets/img/avatar2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front-End/assets/img/avatar3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front-End/assets/img/chicken_soup.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front-End/assets/img/chinese_header.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front-End/assets/img/company-logos/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front-End/assets/img/company-logos/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front-End/assets/img/company-logos/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front-End/assets/img/company-logos/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front-End/assets/img/company-logos/5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front-End/assets/img/cooking-modified.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front-End/assets/img/cooking.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front-End/assets/img/indian_header.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front-End/assets/img/laksa_hd.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front-End/assets/img/logo_black.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front-End/assets/img/logo_black2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front-End/assets/img/logo_white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front-End/assets/img/menu/neoguri.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front-End/assets/img/menu/paneer.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front-End/assets/img/menu/potstickers.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front-End/assets/img/picked_produce-modified.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front-End/assets/img/picked_produce.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front-End/assets/img/produce.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front-End/assets/img/produce2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front-End/assets/img/salmon.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front-End/assets/img/shrimp_veggies-modified.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front-End/assets/img/shrimp_veggies.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front-End/assets/img/spagetti.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front-End/contact.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front-End/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front-End/index2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front-End/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front-End/js/cart.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front-End/js/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front-End/js/jquery.3.6.0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front-End/js/menu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front-End/js/style.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front-End/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front-End/page-checkout.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front-End/signup.html" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
   <component name="ProjectId" id="2CC39xIfSxv4aKbcIjrsEp4nSQB" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -23,33 +390,23 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/xxhea/Desktop/Heap Fine/Heap-Group-10/Back-End"
+    "last_opened_file_path": "C:/Users/xxhea/Desktop/SGCooks/springApp/pom.xml",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "spring.configuration.checksum": "fe01ce2a7fbac8fafaed7c982a04e229"
   }
 }]]></component>
-  <component name="RunManager">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="Heap-Group-10" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="Heap-Group-10" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="57ee7031-d7b4-491b-a322-659bcc24e7f3" name="Changes" comment="" />
+      <changelist id="92102672-6a57-444c-b2eb-03f8bb110c2a" name="Changes" comment="" />
       <created>1658292594257</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1658292594257</updated>
       <workItem from="1658292603575" duration="102000" />
+      <workItem from="1658750998726" duration="82000" />
+      <workItem from="1658751085399" duration="3000" />
+      <workItem from="1658751137922" duration="93000" />
     </task>
     <servers />
   </component>
