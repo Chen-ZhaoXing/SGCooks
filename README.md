@@ -32,6 +32,7 @@ Code submission for [SMU .Hack HEAP 2022]
 - [HTML & CSS]()
 - [Bootstrap ](https://getbootstrap.com/)
 - [Vanilla JavaScript](https://developer.mozilla.org/en-US/)
+- [jQuery](https://jquery.com/)
 - [SpringBoot](https://spring.io/projects/spring-boot)
 - [PostgreSQL](https://www.postgresql.org/download/)
 - [Spoonacular API](https://spoonacular.com/food-api)
