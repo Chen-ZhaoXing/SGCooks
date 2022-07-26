@@ -44,9 +44,9 @@ async function allRecipes() {
         <h5 class="card-title">${data.recipes[i].title}</h5>
         <h9 class="recipe-id" style = "color: white;">${data.recipes[i].id}</h9>
         <p class="card-text"></p>
-<!--        <a href="#" class="btn-addtocart">Add to Cart</a>-->
-        <button id="addToCart" type="button" class="btn-addtocart">
-            Add to Cart</button>
+            <a href="#" class="btn-addtocart" id="addToCart">Add to Cart</a>
+<!--        <button id="addToCart" type="button" class="btn-addtocart">-->
+<!--            Add to Cart</button>-->
         <button class="btn-viewrecipe" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
           View Recipe
         </button>
@@ -360,7 +360,11 @@ async function searchVietRecipes(e){
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body" id="recipe-details"> 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <div class="d-flex justify-content-center">
+                  <div class="spinner-border" role="status">
+                    <span class="sr-only"></span>
+                  </div>
+                </div> 
               </div>
             </div>
           </div>
@@ -407,7 +411,11 @@ async function searchKoreanRecipes(e){
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body" id="recipe-details"> 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <div class="d-flex justify-content-center">
+                  <div class="spinner-border" role="status">
+                    <span class="sr-only"></span>
+                  </div>
+                </div> 
               </div>
             </div>
           </div>
@@ -453,8 +461,12 @@ async function searchEuropeanRecipes(e){
                 <h5 class="modal-title" id="staticBackdropLabel"></h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
-              <div class="modal-body" id="recipe-details"> 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              <div class="modal-body" id="recipe-details">
+                <div class="d-flex justify-content-center">
+                  <div class="spinner-border" role="status">
+                    <span class="sr-only"></span>
+                  </div>
+                </div>  
               </div>
             </div>
           </div>
@@ -526,7 +538,11 @@ async function searchPaleoRecipes(e){
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body" id="recipe-details"> 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <div class="d-flex justify-content-center">
+                  <div class="spinner-border" role="status">
+                    <span class="sr-only"></span>
+                  </div>
+                </div> 
               </div>
             </div>
           </div>
@@ -573,7 +589,11 @@ async function searchVeganRecipes(e){
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body" id="recipe-details"> 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <div class="d-flex justify-content-center">
+                  <div class="spinner-border" role="status">
+                    <span class="sr-only"></span>
+                  </div>
+                </div> 
               </div>
             </div>
           </div>
@@ -620,7 +640,11 @@ async function searchVegRecipes(e){
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body" id="recipe-details"> 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <div class="d-flex justify-content-center">
+                  <div class="spinner-border" role="status">
+                    <span class="sr-only"></span>
+                  </div>
+                </div> 
               </div>
             </div>
           </div>
@@ -667,7 +691,11 @@ async function searchKetoRecipes(e){
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body" id="recipe-details"> 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <div class="d-flex justify-content-center">
+                  <div class="spinner-border" role="status">
+                    <span class="sr-only"></span>
+                  </div>
+                </div> 
               </div>
             </div>
           </div>
@@ -714,7 +742,11 @@ async function searchGlutenFreeRecipes(e){
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body" id="recipe-details"> 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <div class="d-flex justify-content-center">
+                  <div class="spinner-border" role="status">
+                    <span class="sr-only"></span>
+                  </div>
+                </div> 
               </div>
             </div>
           </div>
@@ -761,7 +793,11 @@ async function searchWhole30Recipes(e){
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body" id="recipe-details"> 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <div class="d-flex justify-content-center">
+                  <div class="spinner-border" role="status">
+                    <span class="sr-only"></span>
+                  </div>
+                </div> 
               </div>
             </div>
           </div>
@@ -827,7 +863,13 @@ async function addToCart(e){
       // } else {
       //     $("#postResultDiv").html("<strong>Error</strong>");
       // }
-
+      Swal.fire({
+        // position: 'center',
+        icon: 'success',
+        title: 'Your item has been added!',
+        showConfirmButton: false,
+        timer: 1500
+      })
       console.log(result);
     },
     error : function(e) {
