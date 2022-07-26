@@ -83,8 +83,8 @@ async function getCartItems() {
                       <div class="mr-1"><img class="rounded" src="${data.image}" width="70"></div>
                       <div class="d-flex flex-column align-items-center product-details"><span class="font-weight-bold">${data.title}</span>
                           <div class="d-flex flex-row product-desc">
-                              <div class="color" style="margin-right: 10px;"><span class="text-grey">Product ID:</span><span class="font-weight-bold">${recipeId}</span></div>
-                              <div class="color"><span class="text-grey">Cart ID:</span><span class="font-weight-bold cart-id">${cartItems[i].id}</span></div> <!-- REMEMBER to hide cartID-->
+                              <div class="color" style="margin-right: 10px;"><span class="text-white">Product ID:</span><span class="text-white">${recipeId}</span></div>
+                              <div class="color"><span class="text-white">Cart ID:</span><span class="text-white cart-id">${cartItems[i].id}</span></div> <!-- REMEMBER to hide cartID-->
                           </div>
                       </div>
                       <div class="d-flex flex-row align-items-center qty">
