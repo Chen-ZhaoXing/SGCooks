@@ -27,8 +27,8 @@
     <!-- sweet alert links -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.all.min.js"></script>
     <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.min.css'>
-
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
 
   <!-- custom style css -->
   <link href="/css/style.css" rel="stylesheet">
@@ -60,8 +60,8 @@
 
         </ul>
 
-        <button type="button" class="btn-brand navbar-right-btn" onclick="promptLogin()"><i class="fa fa-list-ul"></i></button>
-        <button type="button" class="btn-brand navbar-right-btn" onclick="promptLogin()" style = "margin-right: 30px;"><i class="fa fa-shopping-cart fa-lg"></i></button>
+        <button type="button" class="btn-brand navbar-right-btn" onclick="promptLogin()" data-toggle="tooltip" data-placement="bottom" title="order history"><i class="fa fa-list-ul"></i></button>
+        <button type="button" class="btn-brand navbar-right-btn" onclick="promptLogin()" data-toggle="tooltip" data-placement="bottom" title="my cart" style = "margin-right: 30px;"><i class="fa fa-shopping-cart fa-lg"></i></button>
         <button type="button" class="btn btn-light btn-start" style="background-color: black; color: #F6D7D0;" onclick = "location.href = 'signup'">Get Started</button>
 
       </div>
@@ -375,7 +375,9 @@
   <script>
       function promptLogin() {
       Swal.fire({
-          title: 'Kindly Login to access the menu',
+          icon: "warning",
+          title: "Log in to access this page",
+          text: 'or sign up for free with us',
           showDenyButton: true,
           showCancelButton: true,
           confirmButtonText: 'Login',

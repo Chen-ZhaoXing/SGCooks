@@ -79,7 +79,14 @@ img {
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: nowrap; /* assumes you only want one row */
+
 }
+
+.navbar-right-btn,
+.nav-item {
+  cursor: pointer;
+}
+
 
 .brand_logo {
   width: 80%;
