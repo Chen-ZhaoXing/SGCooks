@@ -7,7 +7,7 @@
 
 | Platform                          | Description                                                                                                                    |
 :---------------------------------- | :----------------------------------------------------------------------------------------------------------------------------: |
-| Youtube                           | [App Demo]()      |
+| Youtube                           | [App Demo](https://youtu.be/GLeHdXek6B4)      |
 | Figma                             | [Initial Wireframes](https://www.figma.com/file/Tx61GjMJgRKTi7rcVMW4RH/SGCooks-UX?node-id=0%3A1)    |
 
 
