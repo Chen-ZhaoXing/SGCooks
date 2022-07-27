@@ -8,7 +8,7 @@
 | Platform                          | Description                                                                                                                    |
 :---------------------------------- | :----------------------------------------------------------------------------------------------------------------------------: |
 | Youtube                           | [App Demo]()      |
-| Figma                             | [Initial Wireframes]()    |
+| Figma                             | [Initial Wireframes](https://www.figma.com/file/Tx61GjMJgRKTi7rcVMW4RH/SGCooks-UX?node-id=0%3A1)    |
 
 
 Code submission for [SMU .Hack HEAP 2022]
